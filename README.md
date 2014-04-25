@@ -19,4 +19,5 @@ Usage Guide
 -----------
 To run Play Nice, type
 >playnice
+
 within the play-nice directory.
