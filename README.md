@@ -13,17 +13,21 @@ Technology
 
 Setup
 -----
-No specific setup is required to run *Play Nice*. Simply download the application and run it! The database comes pre-filled with information about the current state of tabletop RPGs.
+No specific setup is required to run *Play Nice*. Simply download the application and run it! The database comes pre-filled with information about the current state of tabletop RPGs, though you
+can add your own as well.
 
 Usage Guide
 -----------
-To run Play Nice, type
+To run *Play Nice*, type
 >playnice
 
 inside the play-nice directory. This will give you a menu of options:
 >1. Choose a game
 >2. Browse games
 >3. Search by rules
+>4. New game
+>5. Edit game
 
 Choose option 1 if you know what game you're playing and would like to see related games and material. Choose option 2 if you'd like to take a look at what games are in the database.
-Choose option 3 if you'd like to search for games that fit a specific rule, for example, ascending AC.
+Choose option 3 if you'd like to search for games that fit a specific rule, for example, ascending AC. Choose option 4 to add a new game to the database, and choose option 5 to update
+the information of a game already in the database.
