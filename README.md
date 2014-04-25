@@ -14,3 +14,9 @@ Technology
 Setup
 -----
 No specific setup is required to run *Play Nice*. Simply download the application and run it! The database comes pre-filled with information about the current state of tabletop RPGs.
+
+Usage Guide
+-----------
+To run Play Nice, type
+>playnice
+within the play-nice directory.
