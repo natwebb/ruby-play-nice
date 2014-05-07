@@ -1,0 +1,146 @@
+# Logfile created on 2014-05-06 13:35:24 -0500 by logger.rb/41954
+I, [2014-05-06T13:35:24.761684 #3121]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-06T13:39:16.645187 #3136]  INFO -- : Executing: CREATE TABLE games (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, alt_names text, base_id int, neighbor_id int, author text, year int, AC varchar(4), race_as_class int, saves int, skills int, currency text, init text, xp_for_gp int) with: []
+I, [2014-05-06T13:39:53.626210 #3139]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-06T13:39:53.627826 #3139]  INFO -- : Executing: Insert into games (name) values (?); with: OD&D
+I, [2014-05-06T13:39:53.630535 #3139]  INFO -- : Executing: Select id from games where name = ?; with: OD&D
+I, [2014-05-06T13:40:12.602101 #3139]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [1, "Dungeons & Dragons, White Box", "Gary Gygax, Dave Arneson", 1974, "OD&D"]
+I, [2014-05-06T13:40:39.737705 #3139]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 1, 5, 0, "gold", "group", 1, "OD&D"]
+I, [2014-05-06T13:41:22.198551 #3142]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-06T13:41:22.200419 #3142]  INFO -- : Executing: Insert into games (name) values (?); with: AD&D 1e
+I, [2014-05-06T13:41:22.203612 #3142]  INFO -- : Executing: Select id from games where name = ?; with: AD&D 1e
+I, [2014-05-06T13:41:41.220569 #3142]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [2, "Advanced Dungeons & Dragons 1st Edition", "Gary Gygax", 1977, "AD&D 1e"]
+I, [2014-05-06T13:41:53.611714 #3142]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 0, 5, 0, "gold", "group", 1, "AD&D 1e"]
+I, [2014-05-06T13:42:05.574184 #3144]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T13:43:43.792736 #3145]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T13:43:43.794932 #3145]  INFO -- : Executing: Insert into games (name) values (?); with: OSRIC
+I, [2014-05-06T13:43:43.798145 #3145]  INFO -- : Executing: Select id from games where name = ?; with: OSRIC
+I, [2014-05-06T13:43:45.302873 #3145]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T13:44:16.048772 #3145]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [2, "Old-School Reference Index and Compilation", "Stewart Marshall", 2008, "OSRIC"]
+I, [2014-05-06T13:44:27.472646 #3145]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 0, 5, 0, "gold", "group", 1, "OSRIC"]
+I, [2014-05-06T13:46:52.051790 #3156]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-06T13:46:52.053547 #3156]  INFO -- : Executing: Insert into games (name) values (?); with: Holmes Basic
+I, [2014-05-06T13:46:52.056808 #3156]  INFO -- : Executing: Select id from games where name = ?; with: Holmes Basic
+I, [2014-05-06T13:47:27.480867 #3156]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [4, "Blue Box", "J. Eric Holmes", 1977, "Holmes Basic"]
+I, [2014-05-06T13:47:42.352820 #3156]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 1, 5, 0, "gold", "group", 1, "Holmes Basic"]
+I, [2014-05-06T13:47:56.857828 #3160]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-06T13:47:56.859491 #3160]  INFO -- : Executing: Insert into games (name) values (?); with: Moldvay Basic
+I, [2014-05-06T13:47:56.862740 #3160]  INFO -- : Executing: Select id from games where name = ?; with: Moldvay Basic
+I, [2014-05-06T13:48:20.816327 #3160]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [5, "B/X", "Tom Moldvay", 1981, "Moldvay Basic"]
+I, [2014-05-06T13:48:37.568322 #3160]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 1, 5, 0, "gold", "group", 1, "Moldvay Basic"]
+I, [2014-05-06T13:48:44.025575 #3162]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-06T13:48:44.027941 #3162]  INFO -- : Executing: Insert into games (name) values (?); with: Mentzer Basic
+I, [2014-05-06T13:48:44.127667 #3162]  INFO -- : Executing: Select id from games where name = ?; with: Mentzer Basic
+I, [2014-05-06T13:49:02.008165 #3162]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [6, "BECMI, Red Box", "Frank Mentzer", 1983, "Mentzer Basic"]
+I, [2014-05-06T13:49:11.807729 #3162]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 1, 5, 0, "gold", "group", 1, "Mentzer Basic"]
+I, [2014-05-06T13:49:20.657178 #3163]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-06T13:49:20.659265 #3163]  INFO -- : Executing: Insert into games (name) values (?); with: Rules Cyclopedia
+I, [2014-05-06T13:49:20.759670 #3163]  INFO -- : Executing: Select id from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-06T13:49:39.105971 #3163]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [7, "", "Aaron Allston", 1991, "Rules Cyclopedia"]
+I, [2014-05-06T13:49:53.394905 #3163]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 1, 5, 0, "gold", "group", 1, "Rules Cyclopedia"]
+I, [2014-05-06T13:50:07.348402 #3165]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-06T13:50:07.350846 #3165]  INFO -- : Executing: Insert into games (name) values (?); with: AD&D 2e
+I, [2014-05-06T13:50:07.353678 #3165]  INFO -- : Executing: Select id from games where name = ?; with: AD&D 2e
+I, [2014-05-06T13:50:26.154185 #3165]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [8, "Advanced Dungeons & Dragons 2nd Edition", "David \"Zeb\" Cook", 1989, "AD&D 2e"]
+I, [2014-05-06T13:52:19.257722 #3165]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 0, 5, 1, "gold", "group", 0, "AD&D 2e"]
+I, [2014-05-06T13:53:29.257046 #3170]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:29:13.838448 #3347]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:34:09.920216 #3363]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:34:31.655944 #3364]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:34:36.327819 #3365]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:35:00.030606 #3366]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:35:16.133982 #3367]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:35:41.151162 #3368]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:36:07.081016 #3369]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:36:09.712185 #3370]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:36:28.191892 #3371]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:36:57.999244 #3372]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:37:21.246591 #3373]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:37:33.829523 #3374]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:37:45.110654 #3375]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:37:49.054196 #3376]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:41:23.320971 #3380]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:41:43.585109 #3381]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:41:44.887879 #3381]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T14:44:13.613114 #3384]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-06T14:44:13.613707 #3384]  INFO -- : Executing: Insert into games (name) values (?); with: Labyrinth Lord
+I, [2014-05-06T14:44:13.615038 #3384]  INFO -- : Executing: Select id from games where name = ?; with: Labyrinth Lord
+I, [2014-05-06T14:44:15.219018 #3384]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:44:34.745135 #3384]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [5, "", "Daniel Proctor", 2007, "Labyrinth Lord"]
+I, [2014-05-06T14:44:46.761147 #3384]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 1, 5, 0, "gold", "group", 1, "Labyrinth Lord"]
+I, [2014-05-06T14:45:08.433416 #3385]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-06T14:45:08.434045 #3385]  INFO -- : Executing: Insert into games (name) values (?); with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-06T14:45:08.437685 #3385]  INFO -- : Executing: Select id from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-06T14:45:10.103809 #3385]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:45:21.319623 #3385]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [2, "LL AEC", "Daniel Proctor", 2010, "Labyrinth Lord Advanced Edition Companion"]
+I, [2014-05-06T14:46:01.520095 #3385]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 0, 5, 1, "gold", "group", 1, "Labyrinth Lord Advanced Edition Companion"]
+I, [2014-05-06T14:46:04.960926 #3396]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:46:07.118801 #3396]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T14:53:58.321179 #3402]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:54:00.111707 #3402]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T14:54:02.018825 #3402]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T14:54:02.019225 #3402]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T14:55:19.411376 #3404]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:55:20.497522 #3404]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T14:55:22.313686 #3404]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T14:55:22.314271 #3404]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T14:58:33.928713 #3408]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T14:58:35.254624 #3408]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T14:58:36.311316 #3408]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T14:58:36.311804 #3408]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:20:27.800494 #3430]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T15:20:28.748268 #3430]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:20:29.532892 #3430]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:20:29.533535 #3430]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:24:33.436192 #3433]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T15:24:34.666447 #3433]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:24:35.698458 #3433]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:24:35.699029 #3433]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:24:35.699548 #3433]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:25:08.586413 #3434]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T15:25:09.233266 #3434]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:25:10.113640 #3434]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:25:10.114478 #3434]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:25:10.115047 #3434]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:26:30.231433 #3435]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T15:26:30.565832 #3435]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:26:31.173177 #3435]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:26:31.173533 #3435]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:26:43.855134 #3437]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T15:26:44.141453 #3437]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:26:44.581564 #3437]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:26:44.582183 #3437]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-06T15:26:44.582703 #3437]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:27:04.419220 #3437]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-06T15:27:04.419869 #3437]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-06T15:27:04.420436 #3437]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-06T15:44:40.771632 #3462]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-06T15:45:38.672148 #3463]  INFO -- : Executing: Select * from games where name = ?; with: butt
+I, [2014-05-06T15:45:38.672567 #3463]  INFO -- : Executing: Insert into games (name) values (?); with: butt
+I, [2014-05-06T15:45:38.675275 #3463]  INFO -- : Executing: Select id from games where name = ?; with: butt
+I, [2014-05-06T15:45:41.128039 #3463]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T15:45:50.480709 #3463]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [7, "ass", "me", 1999, "butt"]
+I, [2014-05-06T15:45:56.863090 #3463]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["ascending", 1, 1, 1, "gold", "individual", 1, "butt"]
+I, [2014-05-06T15:46:00.466238 #3464]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-06T15:46:03.471539 #3464]  INFO -- : Executing: delete from games where name = ?; with: butt
+I, [2014-05-06T15:46:07.368655 #3465]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-06T15:47:20.523883 #3467]  INFO -- : Executing: Select * from games where name = ?; with: butt
+I, [2014-05-06T15:47:20.524477 #3467]  INFO -- : Executing: Insert into games (name) values (?); with: butt
+I, [2014-05-06T15:47:20.624668 #3467]  INFO -- : Executing: Select id from games where name = ?; with: butt
+I, [2014-05-06T15:47:26.506189 #3467]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [12, "ass", "me", 12, "butt"]
+I, [2014-05-06T15:47:30.250498 #3467]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["ascending", 1, 1, 1, "gold", "individual", 1, "butt"]
+I, [2014-05-06T15:47:33.027632 #3468]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-06T15:47:34.769702 #3468]  INFO -- : Executing: delete from games where name = ?; with: butt
+I, [2014-05-06T15:48:20.757943 #3472]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T15:48:28.845814 #3472]  INFO -- : Executing: select * from games where base_id = ?; with: 1
+I, [2014-05-06T15:48:30.053631 #3472]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-06T15:48:30.054133 #3472]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-06T15:48:30.054455 #3472]  INFO -- : Executing: select * from games where base_id = ?; with: 1
+I, [2014-05-06T15:49:15.766007 #3475]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-06T15:49:20.734192 #3475]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-06T15:49:23.230405 #3475]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-06T15:49:23.230894 #3475]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-06T15:49:23.231339 #3475]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-06T15:49:34.401023 #3475]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-06T15:49:34.401488 #3475]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-06T15:49:34.401919 #3475]  INFO -- : Executing: select * from games where base_id = ?; with: 5
