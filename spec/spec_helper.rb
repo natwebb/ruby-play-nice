@@ -5,6 +5,7 @@ $LOAD_PATH << "models"
 
 require 'environment'
 require 'game'
+require 'game_neighbor'
 
 Environment.environment = "test"
 
@@ -27,9 +28,16 @@ def populate_base
   run_pn_with_input("4", "AD&D 2e", "1", "Advanced Dungeons & Dragons 2nd Edition", "David 'Zeb' Cook", "1989", "2", "2", "5", "1", "1", "2", "2")
 end
 
+def populate_more_games
+  run_pn_with_input("4", "Labyrinth Lord Advanced Edition Companion", "2", "3", "LL AEC", "Daniel Proctor", "2010", "2", "2", "5", "2", "1", "2", "1")
+  run_pn_with_input("4", "Labyrinth Lord", "2", "2", "", "Daniel Proctor", "2008", "2", "2", "5", "2", "1", "2", "1")
+  run_pn_with_input("4", "OSRIC", "2", "3", "Old-School Reference and Index Compilation", "Stewart Marshall", "2008", "2", "2", "5", "2", "1", "2", "1")
+end
+
 RSpec.configure do |config|
   config.after(:each) do
     Environment.database_connection.execute("DELETE FROM games;")
+    Environment.database_connection.execute("DELETE FROM game_neighbors;")
   end
 end
 

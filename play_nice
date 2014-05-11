@@ -7,17 +7,370 @@ require 'environment'
 Environment.environment = ENV["ENVIRONMENT"] || "production"
 
 require 'game'
+require 'game_neighbor'
 
+#----------------------------------------------------------------MAIN FUNCTIONS----------------------------------------------------------------#
+def run_top_menu
+  puts top_menu
+  choice = get_input
+
+  case choice
+  when "1"
+    choose_game
+  when "2"
+    browse_games
+  when "3"
+    search_rules
+  when "4"
+    new_game
+  when "5"
+    edit_game
+  when "6"
+    link_games
+  when "7"
+    unlink_games
+  when "8"
+    delete_game
+  else
+    puts "'#{choice}' is not a valid option. Please try again."
+    run_top_menu
+  end
+end
+
+def choose_game
+  puts "Please choose your game from the list."
+  name = choose_from_all_games["name"]
+  display_game(name, "neighbor")
+end
+
+def browse_games
+  base_games = Game.get_base_games
+
+  puts "Please choose a base game from the list."
+
+  base_games.each_with_index do |game, i|
+    puts "#{i+1}. #{game["name"]}\n"
+  end
+
+  choice = get_input
+
+  puts "Please choose a related game."
+  base_id = base_games[choice.to_i-1]["id"]
+  show_games_by_base(base_id)
+end
+
+def search_rules
+  puts rules_menu
+  choice = get_input
+
+  case choice
+  when "1"
+    rule = "AC"
+
+    puts "1. Ascending AC"
+    puts "2. Descending AC"
+    ac = get_input
+
+    if ac == "1"
+      setting = "ascending"
+    elsif ac == "2"
+      setting = "descending"
+    else
+      puts "#{ac} is not a valid option. Please try again."
+      search_rules
+    end
+  when "2"
+    rule = "race_as_class"
+
+    puts "1. Races are classes"
+    puts "2. Race and class are separate"
+    rc = get_input
+
+    if rc == "1"
+      setting = 1
+    elsif rc == "2"
+      setting = 0
+    else
+      puts "#{rc} is not a valid option. Please try again."
+      search_rules
+    end
+  when "3"
+    rule = "saves"
+
+    puts "How many saving throws should the game have?"
+    setting = get_input
+  when "4"
+    rule = "skills"
+
+    puts "1. The system has rules for skills"
+    puts "2. The system doesn't have specific skill rules"
+    skills = get_input
+
+    if skills == "1"
+      setting = 1
+    elsif skills == "2"
+      setting = 0
+    else
+      puts "#{skills} is not a valid option. Please try again."
+      search_rules
+    end
+  when "5"
+    rule = "currency"
+
+    puts "1. The game uses a gold-piece standard for currency"
+    puts "2. The game uses a silver-piece standard for currency"
+    c = get_input
+
+    if c == "1"
+      setting = "gold"
+    elsif c == "2"
+      setting = "silver"
+    else
+      puts "#{c} is not a valid option. Please try again."
+      search_rules
+    end
+  when "6"
+    rule = "init"
+
+    puts "1. The game uses group or per-side initiative"
+    puts "2. The game uses individual initiative"
+    init = get_input
+
+    if init == "1"
+      setting = "group"
+    elsif init == "2"
+      setting = "individual"
+    else
+      puts "#{init} is not a valid option. Please try again."
+      search_rules
+    end
+  when "7"
+    rule = "xp_for_gp"
+
+    puts "1. The game primarily awards experience points for treasure earned"
+    puts "2. The game primarily awards experience points for other goals"
+    xp = get_input
+
+    if xp == "1"
+      setting = 1
+    elsif xp == "2"
+      setting = 0
+    else
+      puts "#{xp} is not a valid option. Please try again."
+      search_rules
+    end
+  else
+    search_rules
+  end
+
+  search_by_rule(rule, setting)
+end
+
+def search_by_rule(rule, setting)
+  games = Game.get_by_rule(rule, setting)
+
+  games.each_with_index do |game, i|
+    puts "#{i+1}. #{game["name"]}\n"
+  end
+
+  choice = get_input
+
+  name = games[choice.to_i-1]["name"]
+  display_game(name, "rule", rule, setting)
+end
+
+def new_game
+  puts "Enter the name of the game to add."
+  name = gets
+  return unless name
+  name.chomp!
+  game = Game.new(name)
+  if game.save
+    puts "#{name} has been added."
+    get_game_info(game)
+    get_game_rules(game)
+    puts
+    run_top_menu
+  else
+    puts game.errors
+    new_game
+  end
+end
+
+def edit_game
+  puts "Choose the game to edit."
+  name = choose_from_all_games["name"]
+  game = Game.find_by_name(name)
+
+  puts "Do you want to edit the game info or the rules?"
+  puts "1. Game info (author, release year, etc.)"
+  puts "2. Rules (AC, XP for GP, etc.)"
+
+  choice = get_input
+  if choice == "1"
+    get_game_info(game)
+    run_top_menu
+  elsif choice == "2"
+    get_game_rules(game)
+    run_top_menu
+  end
+end
+
+def link_games
+  puts "Choose the first game to link as neighbors."
+  first_id = choose_from_all_games["id"]
+  puts "Choose the second game to link as neighbors."
+  second_id = choose_from_all_games["id"]
+  GameNeighbor.new(first_id, second_id).save
+  GameNeighbor.new(second_id, first_id).save
+
+  run_top_menu
+end
+
+def unlink_games
+  puts "Choose a pair to unlink."
+
+  pairs = GameNeighbor.all
+  pairs.each_with_index do |pair, i|
+    game_a = Game.find_by_id(pair["game_id"]).get_game_data
+    game_b = Game.find_by_id(pair["neighbor_id"]).get_game_data
+    puts "#{(i/2)+1}. #{game_a["name"]} & #{game_b["name"]}" if i%2 == 0
+  end
+
+  choice = get_input
+
+  GameNeighbor.delete_by_pair(pairs[(choice.to_i)*2-2])
+
+  run_top_menu
+end
+
+def delete_game
+  games = Game.all
+  games.each_with_index do |game, i|
+    puts "#{i+1}. #{game["name"]}\n"
+  end
+
+  choice = get_input
+
+  name = games[choice.to_i-1]["name"]
+  if Game.delete_by_name(name)
+    puts "Deleted #{name} from the database."
+  end
+end
+
+def get_game_info(game)
+  puts "Is this a base game?"
+  puts "1. Yes"
+  puts "2. No"
+
+  choice = get_input
+
+  if choice == "1"
+    base = game.id
+  elsif choice == "2"
+    puts "Choose a base game."
+    base_games = Game.get_base_games
+    base_games.each_with_index do |game, i|
+      puts "#{i+1}. #{game["name"]}\n"
+    end
+
+    choice = get_input
+
+    base = base_games[choice.to_i-1]["id"]
+  end
+
+  puts "Please enter any alternate names for this game."
+  alternate_names = get_input
+
+  puts "Please enter the author(s) of this game."
+  authors = get_input
+
+  puts "Please enter the year this game was released."
+  year = get_input
+
+  game.update_game_info(base, alternate_names, authors, year)
+end
+
+def get_game_rules(game)
+  puts "Does #{game.name} use ascending or descending armor class?"
+  puts "1. Ascending"
+  puts "2. Descending"
+  ac = get_input
+  if ac == "1"
+    ac = "ascending"
+  else
+    ac = "descending"
+  end
+
+  puts "Does #{game.name} have race as class?"
+  puts "1. Yes, races are treated as classes."
+  puts "2. No, race and class are separate."
+  race = get_input
+  if race == "1"
+    race = 1
+  else
+    race = 0
+  end
+
+  puts "How many saving throws does #{game.name} have?"
+  saves = get_input
+  saves = saves.to_i
+
+  puts "Does #{game.name} have a skill system?"
+  puts "1. Yes, there are skills."
+  puts "2. No, there are no rules for skill use."
+  skills = get_input
+  if skills == "1"
+    skills = 1
+  else
+    skills = 0
+  end
+
+  puts "Does #{game.name} use a gold or silver base for currency?"
+  puts "1. Gold-based currency."
+  puts "2. Silver-based currency."
+  currency = get_input
+  if currency == "1"
+    currency = "gold"
+  else
+    currency = "silver"
+  end
+
+  puts "Does #{game.name} use individual or group initiative?"
+  puts "1. Individual initiative."
+  puts "2. Group initiative."
+  init = get_input
+  if init == "1"
+    init = "individual"
+  else
+    init = "group"
+  end
+
+  puts "Does #{game.name} award experience points primarily for treasure?"
+  puts "1. Yes, XP is awarded per SP or GP recovered or spent."
+  puts "2. No, XP is primarily or only awarded for other things."
+  xpgp = get_input
+  if xpgp == "1"
+    xpgp = 1
+  else
+    xpgp = 0
+  end
+
+  game.update_game_rules(ac, race, saves, skills, currency, init, xpgp)
+end
+
+#----------------------------------------------------------------HELPER FUNCTIONS----------------------------------------------------------------#
 def top_menu
 <<EOS
 Welcome to Play Nice! Please choose one of the following options.
-1. Choose a game
-2. Browse games
-3. Search by rules
+1. Choose your game
+2. Browse by base game
+3. Search games by rules
 4. New game
 5. Edit game
-6. Delete game
-q. Quit
+6. Link games
+7. Unlink games
+8. Delete game
 EOS
 end
 
@@ -34,101 +387,16 @@ Please choose a key rule from the list.
 EOS
 end
 
-def run_top_menu
-  puts top_menu
-  choice = gets
-  return unless choice
-  choice.chomp!
-  case choice
-  when "1"
-    choose_game
-  when "2"
-    browse_games
-  when "3"
-    search_rules
-  when "4"
-    new_game
-  when "5"
-    edit_game
-  when "6"
-    delete_game
-  when "q"
-    return
-  else
-    puts "'#{choice}' is not a valid option. Please try again."
-    run_top_menu
-  end
-end
-
-def choose_game
-  puts "Please choose your game from the list."
-end
-
-def delete_game
-  games = Game.all
-  games.each_with_index do |game, i|
-    puts "#{i+1}. #{game["name"]}\n"
-  end
-  puts "q. Quit"
-
-  choice = gets
-  return unless choice
-  choice.chomp!
-  return if choice == 'q'
-
-  name = games[choice.to_i-1]["name"]
-  if Game.delete_by_name(name)
-    puts "Deleted #{name} from the database."
-  end
-end
-
-def browse_games
-  base_games = Game.get_base_games
-
-  puts "Please choose a base game from the list."
-
-  base_games.each_with_index do |game, i|
-    puts "#{i+1}. #{game["name"]}\n"
-  end
-  puts "q. Quit"
-
-  choice = gets
-  return unless choice
-  choice.chomp!
-  return if choice == 'q'
-
-  puts
-  puts "Please choose a related game."
-  base_id = base_games[choice.to_i-1]["id"]
-  show_games_by_base(base_id)
-end
-
-def show_games_by_base(base_id)
-  related_games = Game.get_related_games(base_id)
-
-  related_games.each_with_index do |game, i|
-    puts "#{i+1}. #{game["name"]}\n"
-  end
-  puts "q. Quit"
-
-  choice = gets
-  return unless choice
-  choice.chomp!
-  return if choice == 'q'
-
-  name = related_games[choice.to_i-1]["name"]
-  display_game(name)
-end
-
-def display_game(name)
+def display_game(name, relationship, rule = "", setting = "")
   game = Game.find_by_name(name)
   data = game.get_game_data
 
-  puts
+  puts "------------------------------PLAY NICE GAME DATA SHEET------------------------------"
   puts "Name: #{data["name"]}"
-  puts "Also known as: #{data["alt_names"]}"
+  puts "Also known as: #{data["alt_names"]}" unless data["alt_names"] == ""
   puts "Author(s): #{data["author"]}"
   puts "Release Year: #{data["year"]}"
+  puts
   puts "#{data["name"]} uses #{data["AC"]} armor class."
   puts "Race as class: #{data["race_as_class"] == 1}"
   puts "Number of saving throws: #{data["saves"]}"
@@ -138,161 +406,152 @@ def display_game(name)
   puts "XP for GP: #{data["xp_for_gp"] == 1}"
 
   puts
-  puts "Related Games"
-  show_games_by_base(data["base_id"])
+
+  case relationship
+  when "base"
+    puts "Games that share this base"
+    show_games_by_base(data["base_id"])
+  when "rule"
+    puts "Games that share this rule"
+    search_by_rule(rule, setting)
+  when "neighbor"
+    show_related_and_neighbor_games(name, data["id"], data["base_id"])
+  end
 end
 
-def search_rules
-  puts rules_menu
+def choose_from_all_games
+  games = Game.all
+  games.each_with_index do |game, i|
+    puts "#{i+1}. #{game["name"]}\n"
+  end
+
+  choice = get_input
+
+  games[choice.to_i-1]
+end
+
+def show_games_by_base(base_id)
+  related_games = Game.get_related_games(base_id)
+
+  related_games.each_with_index do |game, i|
+    puts "#{i+1}. #{game["name"]}\n"
+  end
+
+  choice = get_input
+
+  name = related_games[choice.to_i-1]["name"]
+  display_game(name, "base")
+end
+
+def show_related_and_neighbor_games(main_name, game_id, base_id)
+  related_games = Game.get_related_games(base_id)
+  neighbor_games = Game.get_neighbor_games(game_id)
+
+  puts "Games that share a base with this game."
+  related_games.each_with_index do |game, i|
+    puts "#{i+1}. #{game["name"]}\n"
+  end
+
+  bump = related_games.length
+
+  puts
+  puts "Neighboring games to this game."
+  neighbor_games.each_with_index do |game, i|
+    puts "#{i+bump+1}. #{game["name"]}\n"
+  end
+
+  choice = get_input
+
+  if choice.to_i <= bump
+    name = related_games[choice.to_i-1]["name"]
+  else
+    name = neighbor_games[choice.to_i-bump-1]["name"]
+  end
+
+  display_relational_game(name, main_name)
+end
+
+def display_relational_game(display_name, main_name)
+  main_data = Game.find_by_name(main_name).get_game_data
+  display_data = Game.find_by_name(display_name).get_game_data
+
+  puts "------------------------------PLAY NICE GAME DATA SHEET------------------------------"
+  puts "Your game is #{main_data["name"]}."
+  puts
+  puts "Name: #{display_data["name"]}"
+  puts "Also known as: #{display_data["alt_names"]}" unless display_data["alt_names"] == ""
+  puts "Author(s): #{display_data["author"]}"
+  puts "Release Year: #{display_data["year"]}"
+  puts
+
+  if main_data["AC"] == display_data["AC"]
+    puts "Both games use #{main_data["AC"]} armor class."
+  else
+    puts "CONVERSION NEEDED: #{display_data["name"]} uses #{display_data["AC"]} armor class."
+  end
+
+  if main_data["race_as_class"] == display_data["race_as_class"] && main_data["race_as_class"] == 1
+    puts "Both games use race as class."
+  elsif main_data["race_as_class"] == display_data["race_as_class"] && main_data["race_as_class"] == 0
+    puts "Neither game uses race as class."
+  elsif main_data["race_as_class"] > display_data["race_as_class"]
+    puts "CONVERSION NEEDED: #{display_data["name"]} separates race and class."
+  else
+    puts "CONVERSION NEEDED: #{display_data["name"]} uses race as class."
+  end
+
+  if main_data["saves"] == display_data["saves"]
+    puts "Both games use #{main_data["saves"]} saving throws."
+  else
+    puts "CONVERSION NEEDED: #{display_data["name"]} uses #{display_data["saves"]} saving throws."
+  end
+
+  if main_data["skills"] == display_data["skills"] && main_data["skills"] == 1
+    puts "Both games use skill systems, though they might be different."
+  elsif main_data["skills"] == display_data["skills"] && main_data["skills"] == 0
+    puts "Neither game uses a skill system."
+  elsif main_data["skills"] > display_data["skills"]
+    puts "CONVERSION NEEDED: #{display_data["name"]} does not use a skill system."
+  else
+    puts "CONVERSION NEEDED: #{display_data["name"]} uses a skill system."
+  end
+
+  if main_data["currency"] == display_data["currency"]
+    puts "Both games use a #{main_data["currency"]} standard for currency."
+  else
+    puts "CONVERSION NEEDED: #{display_data["name"]} uses a #{display_data["currency"]} standard for currency."
+  end
+
+  if main_data["init"] == display_data["init"]
+    puts "Both games use #{main_data["init"]} initiative."
+  else
+    puts "CONVERSION NEEDED: #{display_data["name"]} uses #{display_data["init"]} initiative."
+  end
+
+  if main_data["xp_for_gp"] == display_data["xp_for_gp"]
+    puts "Both games award experience for treasure."
+  elsif main_data["xp_for_gp"] > display_data["xp_for_gp"]
+    puts "CONVERSION NEEDED: #{display_data["name"]} does not primarily award experience for treasure."
+  else
+    puts "CONVERSION NEEDED: #{display_data["name"]} primarily awards experience for treasure."
+  end
+
+  puts
+
+  show_related_and_neighbor_games(main_name, display_data["id"], display_data["base_id"])
+end
+
+def get_input
+  puts "t. Top menu"
+  puts "q. Quit"
   choice = gets
   return unless choice
   choice.chomp!
-end
+  puts
+  abort("Thanks for using Play Nice!") if choice == 'q'
+  run_top_menu if choice == 't'
 
-def new_game
-  puts "Enter the name of the game to add."
-  name = gets
-  return unless name
-  name.chomp!
-  game = Game.new(name)
-  if game.save
-    puts "#{name} has been added."
-    get_game_info(game)
-    get_game_rules(game)
-  else
-    puts game.errors
-    new_game
-  end
-end
-
-def edit_game
-  puts "Enter the name of the game to edit."
-  name = gets
-  return unless name
-  name.chomp!
-  game = Game.find_by_name(name)
-
-  unless game
-    puts "#{name} cannot be found in the database."
-    edit_game
-  end
-
-  puts "Do you want to edit the game info or the rules?"
-  puts "1. Game info (author, release year, etc.)"
-  puts "2. Rules (AC, XP for GP, etc.)"
-
-  choice = gets
-  if choice == "1\n"
-    get_game_info(game)
-  elsif choice == "2\n"
-    get_game_rules(game)
-  end
-end
-
-def get_game_info(game)
-  puts "Is this a base game?"
-  puts "1. Yes"
-  puts "2. No"
-
-  choice = gets
-  return unless choice
-  choice.chomp!
-
-  if choice == "1"
-    base = game.id
-  elsif choice == "2"
-    puts "Choose a base game."
-    base_games = Game.get_base_games
-    base_games.each_with_index do |game, i|
-      puts "#{i+1}. #{game["name"]}\n"
-    end
-
-    choice = gets
-    return unless choice
-    choice.chomp!
-
-    base = base_games[choice.to_i-1]["id"]
-  end
-
-  puts "Please enter any alternate names for this game."
-  alternate_names = gets.chomp
-
-  puts "Please enter the author(s) of this game."
-  authors = gets.chomp
-
-  puts "Please enter the year this game was released."
-  year = gets.chomp
-
-  game.update_game_info(base, alternate_names, authors, year)
-end
-
-def get_game_rules(game)
-  puts "Does #{game.name} use ascending or descending armor class?"
-  puts "1. Ascending"
-  puts "2. Descending"
-  ac = gets
-  if ac == "1\n"
-    ac = "ascending"
-  else
-    ac = "descending"
-  end
-
-  puts "Does #{game.name} have race as class?"
-  puts "1. Yes, races are treated as classes."
-  puts "2. No, race and class are separate."
-  race = gets
-  if race == "1\n"
-    race = 1
-  else
-    race = 0
-  end
-
-  puts "How many saving throws does #{game.name} have?"
-  saves = gets
-  return unless saves
-  saves = saves.chomp.to_i
-
-  puts "Does #{game.name} have a skill system?"
-  puts "1. Yes, there are skills."
-  puts "2. No, there are no rules for skill use."
-  skills = gets
-  if skills == "1\n"
-    skills = 1
-  else
-    skills = 0
-  end
-
-  puts "Does #{game.name} use a gold or silver base for currency?"
-  puts "1. Gold-based currency."
-  puts "2. Silver-based currency."
-  currency = gets
-  if currency == "1\n"
-    currency = "gold"
-  else
-    currency = "silver"
-  end
-
-  puts "Does #{game.name} use individual or group initiative?"
-  puts "1. Individual initiative."
-  puts "2. Group initiative."
-  init = gets
-  if init == "1\n"
-    init = "individual"
-  else
-    init = "group"
-  end
-
-  puts "Does #{game.name} award experience points primarily for treasure?"
-  puts "1. Yes, XP is awarded per SP or GP recovered or spent."
-  puts "2. No, XP is primarily or only awarded for other things."
-  xpgp = gets
-  if xpgp == "1\n"
-    xpgp = 1
-  else
-    xpgp = 0
-  end
-
-  game.update_game_rules(ac, race, saves, skills, currency, init, xpgp)
+  choice
 end
 
 run_top_menu

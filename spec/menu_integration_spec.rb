@@ -9,6 +9,7 @@ Welcome to Play Nice! Please choose one of the following options.
 3. Search by rules
 4. New game
 5. Edit game
+6. Delete game
 q. Quit
 EOS
   end

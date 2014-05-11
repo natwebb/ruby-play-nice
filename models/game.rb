@@ -20,6 +20,11 @@ class Game
     execute_and_instantiate(statement, name)
   end
 
+  def self.find_by_id(id)
+    statement = "Select * from games where id = ?;"
+    execute_and_instantiate(statement, id)
+  end
+
   def self.last
     statement = "Select * from games order by id DESC limit(1);"
     execute_and_instantiate(statement)
@@ -56,6 +61,16 @@ class Game
   def self.get_related_games(base_id)
     statement = "select * from games where base_id = ?;"
     Environment.database_connection.execute(statement, base_id)
+  end
+
+  def self.get_neighbor_games(id)
+    statement = "select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?;"
+    Environment.database_connection.execute(statement, id)
+  end
+
+  def self.get_by_rule(rule, setting)
+    statement = "select * from games where #{rule} = ?;"
+    Environment.database_connection.execute(statement, setting)
   end
 
   def update_game_info(base, alternate_names, authors, year)

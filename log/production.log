@@ -144,3 +144,1716 @@ I, [2014-05-06T15:49:23.231339 #3475]  INFO -- : Executing: select * from games 
 I, [2014-05-06T15:49:34.401023 #3475]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
 I, [2014-05-06T15:49:34.401488 #3475]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
 I, [2014-05-06T15:49:34.401919 #3475]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-08T09:18:41.024261 #4515]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T09:18:44.359057 #4515]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-08T09:18:46.582792 #4515]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-08T09:18:46.583378 #4515]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-08T09:18:46.583916 #4515]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-08T09:19:52.416058 #4515]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-08T09:19:52.416675 #4515]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-08T09:19:52.417173 #4515]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-08T09:47:05.105579 #4573]  INFO -- : Executing: select * from games where ? = ?; with: ["AC", "descending"]
+I, [2014-05-08T09:47:16.935612 #4574]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T09:47:18.630438 #4574]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-08T09:47:20.030127 #4574]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-08T09:47:20.030648 #4574]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-08T09:47:20.031081 #4574]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-08T09:50:48.837792 #4581]  INFO -- : Executing: select * from games where ? = ?; with: ["AC", "descending"]
+I, [2014-05-08T09:50:59.960844 #4582]  INFO -- : Executing: select * from games where ? = ?; with: ["race_as_class", 1]
+I, [2014-05-08T09:51:41.327151 #4583]  INFO -- : Executing: select * from games where ? = ?; with: ["AC", "descending"]
+I, [2014-05-08T09:52:04.023237 #4585]  INFO -- : Executing: select * from games where ? = ?; with: ["AC", "descending"]
+I, [2014-05-08T09:53:33.589563 #4589]  INFO -- : Executing: select * from games where ? = ?; with: ["AC", "descending"]
+I, [2014-05-08T09:55:13.782828 #4593]  INFO -- : Executing: select * from games where ? = '?'; with: ["AC", "descending"]
+I, [2014-05-08T09:57:20.531572 #4596]  INFO -- : Executing: select * from games where ? = ?; with: ["xp_for_gp", 1]
+I, [2014-05-08T09:59:44.581335 #4602]  INFO -- : Executing: select * from games where ? = ?; with: ["xp_for_gp", 1]
+I, [2014-05-08T10:02:03.101208 #4607]  INFO -- : Executing: select * from games where xp_for_gp = ?; with: 1
+I, [2014-05-08T10:02:53.691778 #4607]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-08T10:02:53.692301 #4607]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-08T10:02:53.692764 #4607]  INFO -- : Executing: select * from games where base_id = ?; with: 7
+I, [2014-05-08T10:03:03.446547 #4607]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-08T10:03:03.447177 #4607]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-08T10:03:03.447585 #4607]  INFO -- : Executing: select * from games where base_id = ?; with: 7
+I, [2014-05-08T10:03:11.856730 #4610]  INFO -- : Executing: select * from games where AC = ?; with: descending
+I, [2014-05-08T10:03:15.623430 #4610]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-08T10:03:15.623738 #4610]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-08T10:03:15.624012 #4610]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-08T10:03:17.424527 #4610]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-08T10:03:17.425034 #4610]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-08T10:03:17.425588 #4610]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-08T10:03:31.150344 #4612]  INFO -- : Executing: select * from games where skills = ?; with: 1
+I, [2014-05-08T10:03:36.829054 #4612]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-08T10:03:36.829603 #4612]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-08T10:03:36.830014 #4612]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-08T10:03:51.730656 #4614]  INFO -- : Executing: select * from games where race_as_class = ?; with: 1
+I, [2014-05-08T10:03:58.066416 #4615]  INFO -- : Executing: select * from games where race_as_class = ?; with: 0
+I, [2014-05-08T10:04:07.747389 #4617]  INFO -- : Executing: select * from games where saves = ?; with: 5
+I, [2014-05-08T10:04:15.617748 #4618]  INFO -- : Executing: select * from games where saves = ?; with: 2
+I, [2014-05-08T10:04:36.375441 #4619]  INFO -- : Executing: select * from games where currency = ?; with: silver
+I, [2014-05-08T10:04:39.350268 #4619]  INFO -- : Executing: select * from games where AC = ?; with: 
+I, [2014-05-08T10:04:48.191620 #4620]  INFO -- : Executing: select * from games where currency = ?; with: gold
+I, [2014-05-08T10:04:57.591435 #4621]  INFO -- : Executing: select * from games where init = ?; with: group
+I, [2014-05-08T10:05:15.433846 #4622]  INFO -- : Executing: select * from games where init = ?; with: individual
+I, [2014-05-08T10:09:05.894806 #4626]  INFO -- : Executing: select * from games where AC = ?; with: descending
+I, [2014-05-08T10:09:07.829405 #4626]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-08T10:09:07.829981 #4626]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-08T10:09:07.830662 #4626]  INFO -- : Executing: select * from games where AC = ?; with: descending
+I, [2014-05-08T10:09:13.705044 #4626]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-08T10:09:13.705589 #4626]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-08T10:09:13.706131 #4626]  INFO -- : Executing: select * from games where AC = ?; with: descending
+I, [2014-05-08T10:09:28.562398 #4627]  INFO -- : Executing: select * from games where race_as_class = ?; with: 0
+I, [2014-05-08T10:09:32.440920 #4627]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-08T10:09:32.441560 #4627]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-08T10:09:32.442086 #4627]  INFO -- : Executing: select * from games where race_as_class = ?; with: 0
+I, [2014-05-08T10:09:36.994683 #4627]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-08T10:09:36.995248 #4627]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-08T10:09:36.995771 #4627]  INFO -- : Executing: select * from games where race_as_class = ?; with: 0
+I, [2014-05-08T10:09:42.391116 #4627]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-08T10:09:42.391460 #4627]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-08T10:09:42.391754 #4627]  INFO -- : Executing: select * from games where race_as_class = ?; with: 0
+I, [2014-05-08T10:09:49.393267 #4628]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T10:09:53.774815 #4628]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-08T10:09:57.846389 #4628]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-08T10:09:57.846996 #4628]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-08T10:09:57.847538 #4628]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-08T10:11:08.926212 #4629]  INFO -- : Executing: select * from games where saves = ?; with: 5
+I, [2014-05-08T10:11:11.693997 #4629]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-08T10:11:11.694584 #4629]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-08T10:11:11.695108 #4629]  INFO -- : Executing: select * from games where saves = ?; with: 5
+I, [2014-05-08T11:40:08.751824 #5323]  INFO -- : Executing: Select * from games where name = ?; with: wodgin
+I, [2014-05-08T11:40:08.752296 #5323]  INFO -- : Executing: Insert into games (name) values (?); with: wodgin
+I, [2014-05-08T11:40:08.754767 #5323]  INFO -- : Executing: Select id from games where name = ?; with: wodgin
+I, [2014-05-08T11:40:10.382739 #5323]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T14:16:38.232679 #5945]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T14:16:46.734959 #5945]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-08T14:16:48.638829 #5945]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-08T14:16:48.639300 #5945]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-08T14:16:48.639728 #5945]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-08T14:16:59.657055 #5945]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-08T14:16:59.657524 #5945]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-08T14:16:59.657981 #5945]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-08T14:18:39.474001 #5949]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T14:18:41.657028 #5949]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-08T14:18:44.385177 #5949]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-08T14:18:44.385893 #5949]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-08T14:18:44.386577 #5949]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-08T14:18:50.432177 #5949]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-08T14:18:50.432549 #5949]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-08T14:18:50.432853 #5949]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-08T14:20:34.650833 #5951]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T14:20:38.545956 #5951]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-08T14:23:12.595982 #5955]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T14:23:14.216919 #5955]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-08T14:23:24.986022 #5957]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-08T14:23:38.603165 #5958]  INFO -- : Executing: select * from games where skills = ?; with: 0
+I, [2014-05-08T14:23:52.612245 #5959]  INFO -- : Executing: select * from games where skills = ?; with: 0
+I, [2014-05-08T14:45:57.857269 #6141]  INFO -- : Executing: CREATE TABLE games (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, alt_names text, base_id int, neighbor_id int, author text, year int, AC text, race_as_class int, saves int, skills int, currency text, init text, xp_for_gp int) with: []
+I, [2014-05-09T09:12:33.278029 #8123]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T09:12:36.559639 #8123]  INFO -- : Executing: delete from games where name = ?; with: wodgin
+I, [2014-05-09T09:32:51.938411 #8160]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T09:35:13.169312 #8163]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T09:35:17.918945 #8163]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T09:35:19.878888 #8163]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [9, 10]
+I, [2014-05-09T09:35:34.343108 #8164]  INFO -- : Executing: CREATE TABLE games (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, alt_names text, base_id int, neighbor_id int, author text, year int, AC text, race_as_class int, saves int, skills int, currency text, init text, xp_for_gp int) with: []
+I, [2014-05-09T09:36:58.697509 #8169]  INFO -- : Executing: CREATE TABLE games (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, alt_names text, base_id int, neighbor_id int, author text, year int, AC text, race_as_class int, saves int, skills int, currency text, init text, xp_for_gp int) with: []
+I, [2014-05-09T09:37:24.895270 #8173]  INFO -- : Executing: CREATE TABLE game_neighbors (game_id, neighbor_id) with: []
+I, [2014-05-09T09:37:24.898352 #8173]  INFO -- : Executing: CREATE TABLE games (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, alt_names text, base_id int, neighbor_id int, author text, year int, AC text, race_as_class int, saves int, skills int, currency text, init text, xp_for_gp int) with: []
+I, [2014-05-09T09:37:49.114005 #8179]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T09:37:50.976668 #8179]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T09:37:53.320826 #8179]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [9, 10]
+I, [2014-05-09T09:37:53.421225 #8179]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [10, 9]
+I, [2014-05-09T09:39:06.053843 #8199]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T09:39:06.054228 #8199]  INFO -- : Executing: Insert into games (name) values (?); with: Gamma World
+I, [2014-05-09T09:39:06.153391 #8199]  INFO -- : Executing: Select id from games where name = ?; with: Gamma World
+I, [2014-05-09T09:39:31.436413 #8199]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [14, "", "James M. Ward, Gary Jaquet", 1978, "Gamma World"]
+I, [2014-05-09T09:41:31.110611 #8199]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 1, 5, 0, "gold", "group", 1, "Gamma World"]
+I, [2014-05-09T09:41:41.967771 #8203]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T09:41:41.968402 #8203]  INFO -- : Executing: Insert into games (name) values (?); with: Mutant Future
+I, [2014-05-09T09:41:42.073143 #8203]  INFO -- : Executing: Select id from games where name = ?; with: Mutant Future
+I, [2014-05-09T09:41:43.374264 #8203]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T09:43:31.209396 #8203]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [14, "", "Daniel Proctor", 2008, "Mutant Future"]
+I, [2014-05-09T09:43:43.321174 #8203]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 1, 5, 0, "gold", "group", 1, "Mutant Future"]
+I, [2014-05-09T09:43:50.647052 #8206]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T09:43:56.503082 #8206]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T09:43:59.422620 #8206]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [9, 15]
+I, [2014-05-09T09:43:59.426706 #8206]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [15, 9]
+I, [2014-05-09T09:54:33.684130 #8215]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T10:39:54.060306 #8278]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T10:40:33.244050 #8279]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T10:40:35.506257 #8279]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T10:40:35.506854 #8279]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T10:41:30.829559 #8282]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T10:41:32.771836 #8282]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T10:41:32.772424 #8282]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T10:41:32.772969 #8282]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T10:56:58.779283 #8297]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T10:57:01.193433 #8297]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T10:57:01.194064 #8297]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T10:57:01.194601 #8297]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T10:57:01.194900 #8297]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T10:58:45.508637 #8299]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T10:58:47.947154 #8299]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T10:58:54.323404 #8299]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T10:58:57.523355 #8299]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T10:58:59.763675 #8299]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T10:58:59.764304 #8299]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T10:58:59.764815 #8299]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T10:59:31.413866 #8299]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-09T10:59:31.414421 #8299]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-09T10:59:31.414883 #8299]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:02:01.107927 #8308]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:02:06.613115 #8308]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:02:06.613720 #8308]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:02:06.614275 #8308]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-09T11:02:06.614591 #8308]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 8
+I, [2014-05-09T11:02:26.631880 #8309]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:02:43.480737 #8309]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-09T11:02:43.481335 #8309]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-09T11:02:43.481852 #8309]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:02:43.482201 #8309]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 3
+I, [2014-05-09T11:09:43.136630 #8319]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:09:45.198732 #8319]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:09:45.199322 #8319]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:09:45.199845 #8319]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:09:45.200195 #8319]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:09:53.797075 #8320]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:09:54.291477 #8320]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:09:54.292093 #8320]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:09:54.292630 #8320]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:09:54.292921 #8320]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:09:59.781239 #8321]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:10:00.219339 #8321]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:10:00.219987 #8321]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:10:00.220516 #8321]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:10:00.220847 #8321]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:10:04.981151 #8322]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:10:05.419291 #8322]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:10:05.419833 #8322]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:10:05.420359 #8322]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:10:05.420751 #8322]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:24:00.100297 #8335]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:24:02.466814 #8335]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:24:02.467244 #8335]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:24:02.467670 #8335]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:24:02.468090 #8335]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:24:07.855482 #8335]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:24:07.855850 #8335]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:24:07.856012 #8335]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:24:07.856170 #8335]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:24:50.782276 #8337]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:24:51.420483 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:24:51.421091 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:24:51.421792 #8337]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:24:51.422294 #8337]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:24:54.444332 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:24:54.444956 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:24:54.445291 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:24:54.445538 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:24:54.445896 #8337]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:24:54.446240 #8337]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T11:29:21.131829 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:21.132217 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:21.132377 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:21.132536 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:21.132764 #8337]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:29:21.132933 #8337]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:29:26.236721 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:26.237331 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:26.237704 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:29:26.237949 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:29:26.238347 #8337]  INFO -- : Executing: select * from games where base_id = ?; with: 14
+I, [2014-05-09T11:29:26.238633 #8337]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 15
+I, [2014-05-09T11:29:30.587233 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:30.587815 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:30.588150 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T11:29:30.588424 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T11:29:30.588759 #8337]  INFO -- : Executing: select * from games where base_id = ?; with: 14
+I, [2014-05-09T11:29:30.589115 #8337]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 14
+I, [2014-05-09T11:29:33.370947 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:33.371499 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:33.371780 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:29:33.372025 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:29:33.372386 #8337]  INFO -- : Executing: select * from games where base_id = ?; with: 14
+I, [2014-05-09T11:29:33.372715 #8337]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 15
+I, [2014-05-09T11:29:35.674950 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:35.675536 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:35.675791 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:35.676083 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:35.676415 #8337]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:29:35.676776 #8337]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:29:38.514993 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:38.515622 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:29:38.515939 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T11:29:38.516186 #8337]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T11:29:38.516561 #8337]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:29:38.516872 #8337]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 5
+I, [2014-05-09T11:31:48.884332 #8346]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:31:49.339097 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:31:49.339696 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:31:49.340196 #8346]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:31:49.340576 #8346]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:31:51.410642 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:31:51.411151 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:31:51.411499 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:31:51.411749 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:31:51.412120 #8346]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:31:51.412462 #8346]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T11:32:02.584783 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:32:02.585271 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:32:02.585560 #8346]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:32:02.585810 #8346]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:32:02.586143 #8346]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:32:02.586434 #8346]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 2
+I, [2014-05-09T11:32:06.561213 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:32:06.561795 #8346]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:32:06.562107 #8346]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-09T11:32:06.562479 #8346]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-09T11:32:06.562864 #8346]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:32:06.563238 #8346]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 3
+I, [2014-05-09T11:34:02.093676 #8349]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:34:02.636189 #8349]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:34:02.636755 #8349]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:34:02.637292 #8349]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:34:02.637873 #8349]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:34:13.152949 #8349]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:34:13.153591 #8349]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:34:13.153912 #8349]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:34:13.154237 #8349]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:34:13.154665 #8349]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:34:13.155081 #8349]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T11:35:58.318888 #8353]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:35:58.789085 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:35:58.789735 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:35:58.790229 #8353]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:35:58.790664 #8353]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:36:01.420909 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:01.421382 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:01.421637 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:36:01.421915 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:36:01.422299 #8353]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:36:01.422714 #8353]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T11:36:12.142878 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:12.143208 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:12.143365 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:12.143538 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:12.143762 #8353]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:36:12.143961 #8353]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:36:21.625420 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:21.625742 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:21.625913 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:36:21.626091 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:36:21.626321 #8353]  INFO -- : Executing: select * from games where base_id = ?; with: 14
+I, [2014-05-09T11:36:21.626510 #8353]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 15
+I, [2014-05-09T11:36:25.010544 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:25.011209 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:25.011527 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T11:36:25.011861 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T11:36:25.012334 #8353]  INFO -- : Executing: select * from games where base_id = ?; with: 14
+I, [2014-05-09T11:36:25.012677 #8353]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 14
+I, [2014-05-09T11:36:28.912088 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:28.912606 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:28.912915 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:36:28.913118 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:36:28.913365 #8353]  INFO -- : Executing: select * from games where base_id = ?; with: 14
+I, [2014-05-09T11:36:28.913616 #8353]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 15
+I, [2014-05-09T11:36:30.536415 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:30.536918 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:30.537163 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:30.537404 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:30.537782 #8353]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:36:30.538045 #8353]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:36:31.880338 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:31.880842 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:36:31.881103 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:36:31.881363 #8353]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:36:31.881864 #8353]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:36:31.882452 #8353]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T11:38:23.530418 #8356]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:38:24.080584 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:38:24.081207 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:38:24.081753 #8356]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:38:24.082233 #8356]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:38:28.606759 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:38:28.607319 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:38:28.607693 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:38:28.607982 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:38:28.608395 #8356]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:38:28.608705 #8356]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T11:38:56.646443 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:38:56.647036 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:38:56.647353 #8356]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:38:56.647692 #8356]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:38:56.648089 #8356]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:38:56.648548 #8356]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 2
+I, [2014-05-09T11:39:16.045392 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:39:16.045978 #8356]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:39:16.046311 #8356]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-09T11:39:16.046679 #8356]  INFO -- : Executing: Select * from games where name = ?; with: OSRIC
+I, [2014-05-09T11:39:16.047065 #8356]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:39:16.047505 #8356]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 3
+I, [2014-05-09T11:46:03.914582 #8365]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:46:05.657456 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:05.658000 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:05.658408 #8365]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:46:05.658784 #8365]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 2
+I, [2014-05-09T11:46:11.756150 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:11.756657 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:11.757006 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:46:11.757291 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T11:46:11.757749 #8365]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:46:11.758204 #8365]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T11:46:20.719717 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:20.720310 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:20.720582 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:46:20.720830 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:46:20.721431 #8365]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:46:20.721856 #8365]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:46:32.092607 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:32.092955 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:32.093129 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T11:46:32.093285 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T11:46:32.093557 #8365]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:46:32.093776 #8365]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 5
+I, [2014-05-09T11:46:38.096430 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:38.096988 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:38.097318 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:46:38.097653 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T11:46:38.098365 #8365]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T11:46:38.098855 #8365]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T11:46:45.916880 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:45.917468 #8365]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:46:45.917783 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:46:45.918104 #8365]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T11:46:45.918589 #8365]  INFO -- : Executing: select * from games where base_id = ?; with: 14
+I, [2014-05-09T11:46:45.918996 #8365]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 15
+I, [2014-05-09T11:51:08.081318 #8369]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:51:09.880281 #8369]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:51:12.375897 #8369]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [2, 8]
+I, [2014-05-09T11:51:12.476777 #8369]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [8, 2]
+I, [2014-05-09T11:51:22.404660 #8369]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:51:24.332225 #8369]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:51:24.332803 #8369]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:51:24.333216 #8369]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:51:24.333591 #8369]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 2
+I, [2014-05-09T11:51:28.491880 #8369]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:51:28.492484 #8369]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:51:28.492752 #8369]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:51:28.492997 #8369]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:51:28.493427 #8369]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-09T11:51:28.493657 #8369]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 8
+I, [2014-05-09T11:52:22.880036 #8372]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:52:41.838037 #8372]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["descending", 0, 5, 1, "gold", "group", 0, "AD&D 2e"]
+I, [2014-05-09T11:52:50.847970 #8373]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T11:52:52.822257 #8373]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:52:59.029229 #8373]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:53:00.581175 #8373]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:53:00.581716 #8373]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:53:00.582158 #8373]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:53:00.582521 #8373]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 2
+I, [2014-05-09T11:53:03.165255 #8373]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:53:03.165804 #8373]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:53:03.166181 #8373]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:53:03.166474 #8373]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:53:03.166954 #8373]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-09T11:53:03.167234 #8373]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 8
+I, [2014-05-09T11:53:31.428780 #8374]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T11:53:33.634293 #8374]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-09T11:53:37.299670 #8374]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:53:37.300213 #8374]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:53:37.300744 #8374]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-09T11:53:57.231906 #8374]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T11:53:58.967615 #8374]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:54:02.615567 #8374]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:54:02.616187 #8374]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:54:02.616682 #8374]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:54:46.288092 #8375]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T11:54:48.055876 #8375]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:54:48.056538 #8375]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:54:48.057041 #8375]  INFO -- : Executing: select * from games where base_id = ?; with: 8
+I, [2014-05-09T11:54:48.057444 #8375]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 8
+I, [2014-05-09T11:54:52.727990 #8375]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:54:52.728614 #8375]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T11:54:52.728972 #8375]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:54:52.729275 #8375]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T11:54:52.729750 #8375]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T11:54:52.730134 #8375]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 2
+I, [2014-05-09T13:55:46.360974 #8522]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T13:55:46.362258 #8522]  INFO -- : Executing: Insert into games (name) values (?); with: Microlite81
+I, [2014-05-09T13:55:46.363521 #8522]  INFO -- : Executing: Select id from games where name = ?; with: Microlite81
+I, [2014-05-09T13:55:47.798731 #8522]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T13:56:31.834117 #8522]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [5, "Microlite81 Extended", "Randall S Stukey", 2013, "Microlite81"]
+I, [2014-05-09T13:59:23.278357 #8522]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["ascending", 1, 1, 0, "gold", "group", 1, "Microlite81"]
+I, [2014-05-09T14:00:26.180258 #8539]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T14:00:26.180902 #8539]  INFO -- : Executing: Insert into games (name) values (?); with: Microlite74
+I, [2014-05-09T14:00:26.282289 #8539]  INFO -- : Executing: Select id from games where name = ?; with: Microlite74
+I, [2014-05-09T14:00:27.761872 #8539]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T14:00:44.625881 #8539]  INFO -- : Executing: Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?; with: [1, "", "Randall S. Stukey", 2008, "Microlite74"]
+I, [2014-05-09T14:05:35.080831 #8539]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["ascending", 0, 3, 0, "gold", "individual", 0, "Microlite74"]
+I, [2014-05-09T14:05:54.872254 #8539]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:05:59.012211 #8539]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:06:00.379922 #8539]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [16, 17]
+I, [2014-05-09T14:06:00.479836 #8539]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [17, 16]
+I, [2014-05-09T14:06:30.700813 #8539]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:07:31.244018 #8539]  INFO -- : Executing: Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?; with: ["ascending", 1, 1, 0, "gold", "group", 0, "Microlite81"]
+I, [2014-05-09T14:07:53.917896 #8554]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:08:34.438328 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:08:38.685640 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:08:38.686333 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:08:38.687066 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:08:38.687649 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 16
+I, [2014-05-09T14:08:56.878866 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:08:56.879187 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:08:56.879345 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:08:56.879526 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:08:56.879825 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:08:56.880041 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T14:09:11.075197 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:09:11.075809 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:09:11.076138 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T14:09:11.076487 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T14:09:11.077072 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:09:11.077553 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 5
+I, [2014-05-09T14:09:20.655135 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:09:20.655461 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:09:20.655618 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:09:20.655813 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:09:20.656060 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:09:20.656275 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T14:09:22.863889 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:09:22.864543 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:09:22.864925 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T14:09:22.865245 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T14:09:22.865655 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T14:09:22.866013 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T14:10:01.565983 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:01.566629 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:01.566950 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T14:10:01.567290 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T14:10:01.567705 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 2
+I, [2014-05-09T14:10:01.568073 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 10
+I, [2014-05-09T14:10:07.955505 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:07.955838 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:07.955998 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:10:07.956168 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:10:07.956419 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:10:07.956627 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T14:10:10.300112 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:10.300613 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:10.300875 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:10.301150 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:10.301563 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:10:10.302004 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 16
+I, [2014-05-09T14:10:23.231812 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:23.232264 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:10:23.232534 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T14:10:23.232808 #8556]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T14:10:23.233267 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 1
+I, [2014-05-09T14:10:23.233614 #8556]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 17
+I, [2014-05-09T14:17:58.961434 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:18:05.862230 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:18:06.797454 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [4, 5]
+I, [2014-05-09T14:18:06.902988 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [5, 4]
+I, [2014-05-09T14:18:09.245364 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:18:11.605347 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:18:12.389560 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [5, 6]
+I, [2014-05-09T14:18:12.490167 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [6, 5]
+I, [2014-05-09T14:19:17.800832 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:19:19.833188 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:19:20.657065 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [1, 4]
+I, [2014-05-09T14:19:20.660390 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [4, 1]
+I, [2014-05-09T14:19:28.112503 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:19:31.376344 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:19:31.935771 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [6, 7]
+I, [2014-05-09T14:19:32.035715 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [7, 6]
+I, [2014-05-09T14:19:50.645036 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:19:53.212319 #8556]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:19:53.932942 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [1, 14]
+I, [2014-05-09T14:19:54.032561 #8556]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [14, 1]
+I, [2014-05-09T14:20:49.869626 #8556]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T14:20:51.989599 #8556]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:22:17.289229 #8571]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:22:32.415254 #8571]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T14:37:26.510189 #8584]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:37:29.435137 #8584]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:37:29.435556 #8584]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:37:29.435920 #8584]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:37:29.436278 #8584]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 16
+I, [2014-05-09T14:37:41.632005 #8584]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:38:04.918564 #8586]  INFO -- : Executing: select * from games where skills = ?; with: 0
+I, [2014-05-09T14:38:10.866258 #8586]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T14:38:10.866886 #8586]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T14:38:10.867450 #8586]  INFO -- : Executing: select * from games where skills = ?; with: 0
+I, [2014-05-09T14:38:56.422608 #8588]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T14:39:00.229169 #8588]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:40:24.276331 #8593]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T14:40:30.744585 #8593]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:40:34.464502 #8593]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:40:34.465110 #8593]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:40:34.465797 #8593]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:42:02.694485 #8595]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T14:42:05.236957 #8595]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:42:07.252669 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:42:07.253291 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:42:07.254077 #8595]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:42:37.165667 #8595]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:42:41.315623 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T14:42:41.316246 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T14:42:41.316745 #8595]  INFO -- : Executing: select * from games where base_id = ?; with: 7
+I, [2014-05-09T14:42:41.317074 #8595]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 7
+I, [2014-05-09T14:42:51.789948 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T14:42:51.790554 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T14:42:51.790896 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T14:42:51.791154 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T14:42:51.791618 #8595]  INFO -- : Executing: select * from games where base_id = ?; with: 6
+I, [2014-05-09T14:42:51.791957 #8595]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 6
+I, [2014-05-09T14:43:32.931040 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T14:43:32.931560 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T14:43:32.931884 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T14:43:32.932167 #8595]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T14:43:32.932573 #8595]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:43:32.932921 #8595]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 5
+I, [2014-05-09T14:44:06.499732 #8598]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:44:12.117828 #8598]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:44:12.118178 #8598]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:44:12.118462 #8598]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:44:12.118696 #8598]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T14:44:28.022514 #8598]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:44:28.023161 #8598]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:44:28.023472 #8598]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:44:28.023794 #8598]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:44:28.024285 #8598]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:44:28.024753 #8598]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 16
+I, [2014-05-09T14:45:29.280344 #8602]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:45:34.282141 #8602]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:45:34.282512 #8602]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:45:34.282865 #8602]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:45:34.283223 #8602]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T14:46:07.308529 #8604]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:46:09.258803 #8604]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:46:09.259388 #8604]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:46:09.259968 #8604]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:46:09.260469 #8604]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T14:47:22.583454 #8606]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T14:47:24.645646 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:47:24.646203 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:47:24.646768 #8606]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:47:24.647174 #8606]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 9
+I, [2014-05-09T14:48:14.051481 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:48:14.052040 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:48:14.052359 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:48:14.052678 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T14:48:14.053139 #8606]  INFO -- : Executing: select * from games where base_id = ?; with: 5
+I, [2014-05-09T14:48:14.053481 #8606]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 16
+I, [2014-05-09T14:48:36.678219 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:48:36.678757 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T14:48:36.679073 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T14:48:36.679314 #8606]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T14:48:36.679744 #8606]  INFO -- : Executing: select * from games where base_id = ?; with: 1
+I, [2014-05-09T14:48:36.680108 #8606]  INFO -- : Executing: select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?; with: 17
+I, [2014-05-09T15:05:58.664084 #8629]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:05:58.664624 #8629]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:05:58.664791 #8629]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:06:47.599370 #8631]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:06:47.599882 #8631]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:06:47.600050 #8631]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:07:59.119054 #8634]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:07:59.119563 #8634]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:07:59.119731 #8634]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:12:15.406503 #8645]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:12:15.407333 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:12:15.407635 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:12:15.407916 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:12:15.408168 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:12:15.408563 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:12:15.408740 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:12:15.408900 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:12:15.409123 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:12:15.409500 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:12:15.409671 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:12:15.409859 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:12:15.410102 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:12:15.410427 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:12:15.410575 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:12:15.410771 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:12:15.410992 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:12:15.411300 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:12:15.411474 #8645]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:12:15.411665 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:12:15.411962 #8645]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:12:15.412231 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:12:15.412399 #8645]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:12:15.412542 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:12:15.412690 #8645]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:12:15.412966 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:12:15.413127 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:12:15.413326 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:12:15.413550 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:12:15.413912 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:12:15.414080 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:12:15.414265 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:12:15.414533 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:12:15.414835 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:12:15.415004 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:12:15.415182 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:12:15.415399 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:12:15.415746 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:12:15.415886 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:12:15.416082 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:12:15.416299 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:12:15.416634 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:12:15.416789 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:12:15.416930 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:12:15.417080 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:12:15.417369 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:12:15.417541 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:12:15.417725 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:12:15.417941 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:12:15.418280 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:12:15.418428 #8645]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:12:15.418589 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:12:15.418808 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:12:15.419187 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:12:15.419348 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:12:15.419547 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:12:15.419792 #8645]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:12:15.420113 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:12:15.420258 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:12:15.420454 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:12:15.420694 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:12:15.420933 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:12:15.421096 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:12:15.421244 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:12:15.421395 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:12:15.421643 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:12:15.421823 #8645]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:12:15.421962 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:12:15.422100 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:12:15.422347 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:12:15.422494 #8645]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:12:15.422644 #8645]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:12:15.422780 #8645]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:12:34.582487 #8647]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:12:34.583351 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:12:34.583639 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:12:34.583922 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:12:34.584156 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:12:34.584458 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:12:34.584796 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:12:34.585146 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:12:34.585291 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:12:34.585444 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:12:34.585707 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:12:34.585863 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:12:34.586011 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:12:34.586163 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:12:34.586403 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:12:34.586558 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:12:34.586680 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:12:34.586846 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:12:34.587076 #8647]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:12:34.587236 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:12:34.587375 #8647]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:12:34.587523 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:12:34.587775 #8647]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:12:34.587917 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:12:34.588092 #8647]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:12:34.588259 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:12:34.588503 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:12:34.588682 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:12:34.588814 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:12:34.588972 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:12:34.589219 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:12:34.589384 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:12:34.589528 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:12:34.589676 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:12:34.589925 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:12:34.590074 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:12:34.590245 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:12:34.590405 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:12:34.590703 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:12:34.590879 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:12:34.591054 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:12:34.591230 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:12:34.591366 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:12:34.591539 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:12:34.591671 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:12:34.591824 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:12:34.591977 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:12:34.592113 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:12:34.592243 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:12:34.592413 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:12:34.592545 #8647]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:12:34.592699 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:12:34.592829 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:12:34.592990 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:12:34.593122 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:12:34.593256 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:12:34.593408 #8647]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:12:34.593556 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:12:34.593705 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:12:34.593839 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:12:34.593979 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:12:34.594127 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:12:34.594257 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:12:34.594390 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:12:34.594527 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:12:34.594675 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:12:34.594810 #8647]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:12:34.594951 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:12:34.595093 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:12:34.595279 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:12:34.595428 #8647]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:12:34.595562 #8647]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:12:34.595691 #8647]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:15:51.886877 #8656]  INFO -- : Executing: Select * from games where id = base_id; with: []
+I, [2014-05-09T15:16:01.418901 #8656]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:16:01.419292 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:16:01.419476 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:16:01.419668 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:16:01.419814 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:16:01.419998 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:16:01.420141 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:16:01.420285 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:16:01.420440 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:16:01.420594 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:16:01.420744 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:16:01.420881 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:16:01.421032 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:16:01.421182 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:16:01.421312 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:16:01.421470 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:16:01.421601 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:16:01.421749 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:16:01.421897 #8656]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:16:01.422032 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:16:01.422203 #8656]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:16:01.422351 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:16:01.422518 #8656]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:16:01.422702 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:16:01.422833 #8656]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:16:01.422980 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:16:01.423125 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:16:01.423259 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:16:01.423414 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:16:01.423566 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:16:01.423759 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:16:01.423931 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:16:01.424093 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:16:01.424258 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:16:01.424450 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:16:01.424627 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:16:01.424788 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:16:01.424942 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:16:01.425085 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:16:01.425284 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:16:01.425418 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:16:01.425587 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:16:01.425720 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:16:01.425856 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:16:01.426010 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:16:01.426161 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:16:01.426322 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:16:01.426494 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:16:01.426628 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:16:01.426788 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:16:01.426921 #8656]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:16:01.427057 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:16:01.427212 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:16:01.427356 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:16:01.427509 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:16:01.427651 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:16:01.427793 #8656]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:16:01.427942 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:16:01.428073 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:16:01.428211 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:16:01.428342 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:16:01.428492 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:16:01.428630 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:16:01.428787 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:16:01.428918 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:16:01.429090 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:16:01.429241 #8656]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:16:01.429378 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:16:01.429508 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:16:01.429679 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:16:01.429826 #8656]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:16:01.429983 #8656]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:16:01.430114 #8656]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:16:12.509812 #8658]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:16:12.510715 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:16:12.511032 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:16:12.511323 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:16:12.511560 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:16:12.511865 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:16:12.512207 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:16:12.512563 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:16:12.512709 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:16:12.512865 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:16:12.513126 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:16:12.513287 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:16:12.513436 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:16:12.513589 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:16:12.513845 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:16:12.513997 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:16:12.514121 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:16:12.514288 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:16:12.514524 #8658]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:16:12.514684 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:16:12.514836 #8658]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:16:12.514997 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:16:12.515233 #8658]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:16:12.515380 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:16:12.515516 #8658]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:16:12.515734 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:16:12.515953 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:16:12.516133 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:16:12.516266 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:16:12.516426 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:16:12.516659 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:16:12.516804 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:16:12.516961 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:16:12.517122 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:16:12.517381 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:16:12.517527 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:16:12.517681 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:16:12.517879 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:16:12.518042 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:16:12.518199 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:16:12.518360 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:16:12.518510 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:16:12.518643 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:16:12.518808 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:16:12.518940 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:16:12.519091 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:16:12.519247 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:16:12.519387 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:16:12.519519 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:16:12.519693 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:16:12.519853 #8658]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:16:12.520056 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:16:12.520193 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:16:12.520355 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:16:12.520527 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:16:12.520696 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:16:12.520860 #8658]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:16:12.521014 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:16:12.521209 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:16:12.521376 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:16:12.521523 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:16:12.521675 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:16:12.521806 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:16:12.521941 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:16:12.522080 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:16:12.522228 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:16:12.522365 #8658]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:16:12.522507 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:16:12.522655 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:16:12.522828 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:16:12.522959 #8658]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:16:12.523115 #8658]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:16:12.523276 #8658]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:24:30.371785 #8669]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:24:30.372697 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:24:30.373097 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:24:30.373363 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:24:30.373596 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:24:30.373898 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:24:30.374297 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:24:30.374581 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:24:30.374762 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:24:30.374934 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:24:30.375146 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:24:30.375332 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:24:30.375482 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:24:30.375661 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:24:30.375892 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:24:30.376050 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:24:30.376200 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:24:30.376362 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:24:30.376547 #8669]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:24:30.376724 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:24:30.376850 #8669]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:24:30.376998 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:24:30.377248 #8669]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:24:30.377395 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:24:30.377561 #8669]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:24:30.377715 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:24:30.377948 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:24:30.378128 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:24:30.378249 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:24:30.378395 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:24:30.378649 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:24:30.378794 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:24:30.378936 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:24:30.379084 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:24:30.379335 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:24:30.379498 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:24:30.379622 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:24:30.379801 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:24:30.380065 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:24:30.380255 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:24:30.380385 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:24:30.380543 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:24:30.380749 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:24:30.380934 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:24:30.381067 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:24:30.381251 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:24:30.381465 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:24:30.381625 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:24:30.381780 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:24:30.381938 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:24:30.382180 #8669]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:24:30.382327 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:24:30.382456 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:24:30.382625 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:24:30.382842 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:24:30.382988 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:24:30.383149 #8669]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:24:30.383302 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:24:30.383535 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:24:30.383677 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:24:30.383829 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:24:30.383986 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:24:30.384205 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:24:30.384360 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:24:30.384500 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:24:30.384659 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:24:30.384883 #8669]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:24:30.385050 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:24:30.385195 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:24:30.385361 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:24:30.385610 #8669]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:24:30.385757 #8669]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:24:30.385913 #8669]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:24:41.002229 #8669]  INFO -- : Executing: delete * from game_neighbors where game_id = ? and neighbor_id = ? with: [2, 8]
+I, [2014-05-09T15:27:11.197656 #8671]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:27:11.198492 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:27:11.198802 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:27:11.199060 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:27:11.199286 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:27:11.199558 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:27:11.199727 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:27:11.199872 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:27:11.200007 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:27:11.200182 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:27:11.200317 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:27:11.200469 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:27:11.200602 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:27:11.200768 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:27:11.200900 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:27:11.201035 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:27:11.201183 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:27:11.201328 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:27:11.201458 #8671]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:27:11.201606 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:27:11.201735 #8671]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:27:11.201883 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:27:11.202031 #8671]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:27:11.202161 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:27:11.202332 #8671]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:27:11.202487 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:27:11.202618 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:27:11.202780 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:27:11.202905 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:27:11.203065 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:27:11.203199 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:27:11.203332 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:27:11.203482 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:27:11.203648 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:27:11.203775 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:27:11.203926 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:27:11.204061 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:27:11.204225 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:27:11.204403 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:27:11.204570 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:27:11.204695 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:27:11.204842 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:27:11.205000 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:27:11.205134 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:27:11.205262 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:27:11.205435 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:27:11.205561 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:27:11.205693 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:27:11.205842 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:27:11.205992 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:27:11.206199 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:27:11.206342 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:27:11.206469 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:27:11.206629 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:27:11.206760 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:27:11.206919 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:27:11.207050 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:27:11.207199 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:27:11.207345 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:27:11.207478 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:27:11.207620 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:27:11.207767 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:27:11.207896 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:27:11.208039 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:27:11.208173 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:27:11.208325 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:27:11.208455 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:27:11.208618 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:27:11.208758 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:27:11.208914 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:27:11.209064 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:27:11.209198 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:27:11.209349 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:27:14.403982 #8671]  INFO -- : Executing: delete from game_neighbors where game_id = ? and neighbor_id = ?; with: [2, 8]
+I, [2014-05-09T15:27:14.503310 #8671]  INFO -- : Executing: delete from game_neighbors where game_id = ? and neighbor_id = ?; with: [8, 2]
+I, [2014-05-09T15:27:16.379962 #8671]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:27:16.380716 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:27:16.380983 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:27:16.381269 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:27:16.381501 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:27:16.381784 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:27:16.382013 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:27:16.382248 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:27:16.382504 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:27:16.382756 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:27:16.382983 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:27:16.383247 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:27:16.383366 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:27:16.383528 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:27:16.383660 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:27:16.383796 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:27:16.383926 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:27:16.384095 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:27:16.384238 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:27:16.384374 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:27:16.384525 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:27:16.384673 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:27:16.384804 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:27:16.384956 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:27:16.385085 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:27:16.385250 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:27:16.385381 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:27:16.385515 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:27:16.385662 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:27:16.385805 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:27:16.385935 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:27:16.386089 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:27:16.386228 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:27:16.386376 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:27:16.386523 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:27:16.386653 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:27:16.388151 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:27:16.388424 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:27:16.388576 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:27:16.388748 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:27:16.388890 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:27:16.389067 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:27:16.389231 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:27:16.389386 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:27:16.389518 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:27:16.389682 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:27:16.389820 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:27:16.389969 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:27:16.390101 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:27:16.390273 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:27:16.390405 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:27:16.390541 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:27:16.390666 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:27:16.390825 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:27:16.390955 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:27:16.391099 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:27:16.391241 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:27:16.391395 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:27:16.391535 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:27:16.391684 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:27:16.391840 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:27:16.391994 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:27:16.392202 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:27:16.392385 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:27:16.392514 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:27:59.501338 #8671]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T15:28:01.405286 #8671]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T15:28:02.980661 #8671]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [2, 8]
+I, [2014-05-09T15:28:03.080468 #8671]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [8, 2]
+I, [2014-05-09T15:28:04.525261 #8671]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:28:04.526071 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:28:04.526436 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:28:04.526677 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:28:04.526900 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:28:04.527191 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:28:04.527433 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:28:04.527689 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:28:04.527903 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:28:04.528186 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:28:04.528405 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:28:04.528712 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:28:04.528937 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:28:04.529087 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:28:04.529218 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:28:04.529387 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:28:04.529506 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:28:04.529676 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:28:04.529806 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:28:04.529938 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:28:04.530096 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:28:04.530243 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:28:04.530397 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:28:04.530530 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:28:04.530658 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:28:04.530830 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:28:04.530959 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:28:04.531121 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:28:04.531249 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:28:04.531395 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:28:04.531544 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:28:04.531677 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:28:04.531805 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:28:04.531981 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:28:04.532111 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:28:04.532243 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:28:04.532369 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:28:04.532534 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:28:04.532661 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:28:04.532792 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:28:04.532943 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:28:04.533088 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:28:04.533216 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:28:04.533388 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:28:04.533516 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:28:04.533660 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:28:04.533818 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:28:04.533949 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:28:04.534074 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:28:04.534220 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:28:04.534376 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:28:04.534507 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:28:04.534632 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:28:04.534803 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:28:04.534930 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:28:04.535084 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:28:04.535215 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:28:04.535385 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:28:04.535512 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:28:04.535643 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:28:04.535793 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:28:04.535938 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:28:04.536085 #8671]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:28:04.536215 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:28:04.536368 #8671]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:28:04.536513 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:28:04.536640 #8671]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:28:04.536809 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:28:04.536968 #8671]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:28:04.537114 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:28:04.537255 #8671]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:28:04.537394 #8671]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:28:04.537538 #8671]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:30:00.895136 #8677]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:30:00.895943 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:30:00.896256 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:30:00.896511 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:30:00.896751 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:30:00.897012 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:30:00.897283 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:30:00.897491 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:30:00.897635 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:30:00.897813 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:30:00.897949 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:30:00.898104 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:30:00.898237 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:30:00.898388 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:30:00.898518 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:30:00.898665 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:30:00.898807 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:30:00.898956 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:30:00.899091 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:30:00.899246 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:30:00.899370 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:30:00.899492 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:30:00.899630 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:30:00.899753 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:30:00.899914 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:30:00.900063 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:30:00.900192 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:30:00.900359 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:30:00.900487 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:30:00.900611 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:30:00.900744 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:30:00.900866 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:30:00.901001 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:30:00.901147 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:30:00.901292 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:30:00.901448 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:30:00.901566 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:30:00.901702 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:30:00.901844 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:30:00.901967 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:30:00.902113 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:30:00.902259 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:30:00.902390 #8677]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:30:00.902590 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:30:00.902709 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:30:00.902872 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:30:00.902991 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:30:00.903113 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:30:00.903254 #8677]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:30:00.903403 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:30:00.903532 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:30:00.903690 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:30:00.903808 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:30:00.903940 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:30:00.904057 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:30:00.904178 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:30:00.904318 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:30:00.904463 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:30:00.904611 #8677]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:30:00.904750 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:30:00.904879 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:30:00.905001 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:30:00.905118 #8677]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:30:00.905247 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:30:00.905365 #8677]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:30:00.905510 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:30:00.905649 #8677]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:30:00.905807 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:30:00.905931 #8677]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:30:00.906074 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:30:00.906210 #8677]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:30:00.906333 #8677]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:30:00.906449 #8677]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:30:42.137203 #8679]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:30:42.137739 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:30:42.137942 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:30:42.138135 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:30:42.138300 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:30:42.138497 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:30:42.138761 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:30:42.139008 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:30:42.139188 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:30:42.139362 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:30:42.139524 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:30:42.139689 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:30:42.139828 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:30:42.140011 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:30:42.140208 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:30:42.140403 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:30:42.140557 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:30:42.140697 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:30:42.140832 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:30:42.140984 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:30:42.141118 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:30:42.141317 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:30:42.141564 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:30:42.141731 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:30:42.141910 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:30:42.142069 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:30:42.142203 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:30:42.142366 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:30:42.142511 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:30:42.142676 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:30:42.142916 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:30:42.143082 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:30:42.143238 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:30:42.143372 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:30:42.143535 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:30:42.143689 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:30:42.143822 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:30:42.143998 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:30:42.144244 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:30:42.144436 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:30:42.144591 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:30:42.144731 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:30:42.144862 #8679]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:30:42.145043 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:30:42.145179 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:30:42.145386 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:30:42.145588 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:30:42.145764 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:30:42.145948 #8679]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:30:42.146092 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:30:42.146254 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:30:42.146416 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:30:42.146544 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:30:42.146707 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:30:42.146841 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:30:42.147060 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:30:42.147229 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:30:42.147364 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:30:42.147522 #8679]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:30:42.147657 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:30:42.147796 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:30:42.147946 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:30:42.148100 #8679]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:30:42.148295 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:30:42.148430 #8679]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:30:42.148565 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:30:42.148699 #8679]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:30:42.148855 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:30:42.148985 #8679]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:30:42.149159 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:30:42.149348 #8679]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:30:42.149542 #8679]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:30:42.149676 #8679]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:31:51.864366 #8685]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:31:51.865270 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:31:51.865582 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:31:51.865839 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:31:51.866067 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:31:51.866328 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:31:51.866595 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:31:51.866827 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:31:51.867054 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:31:51.867258 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:31:51.867458 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:31:51.867694 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:31:51.867846 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:31:51.867991 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:31:51.868115 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:31:51.868241 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:31:51.868376 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:31:51.868522 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:31:51.868741 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:31:51.868923 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:31:51.869047 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:31:51.869170 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:31:51.869307 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:31:51.869432 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:31:51.869590 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:31:51.869735 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:31:51.869963 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:31:51.870149 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:31:51.870273 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:31:51.870399 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:31:51.870535 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:31:51.870659 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:31:51.870796 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:31:51.870936 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:31:51.871203 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:31:51.871362 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:31:51.871485 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:31:51.871621 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:31:51.871759 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:31:51.871884 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:31:51.872033 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:31:51.872177 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:31:51.872443 #8685]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:31:51.872648 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:31:51.872781 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:31:51.872935 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:31:51.873058 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:31:51.873183 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:31:51.873322 #8685]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:31:51.873472 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:31:51.873619 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:31:51.873777 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:31:51.873897 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:31:51.874032 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:31:51.874151 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:31:51.874273 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:31:51.874413 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:31:51.874561 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:31:51.874719 #8685]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:31:51.874860 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:31:51.874990 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:31:51.875113 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:31:51.875231 #8685]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:31:51.875362 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:31:51.875481 #8685]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:31:51.875626 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:31:51.875760 #8685]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:31:51.875921 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:31:51.876040 #8685]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:31:51.876184 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:31:51.876320 #8685]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:31:51.876441 #8685]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:31:51.876558 #8685]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:32:32.821767 #8687]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:32:32.822580 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:32:32.822893 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:32:32.823153 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:32:32.823390 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:32:32.823685 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:32:32.823954 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:32:32.824188 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:32:32.824318 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:32:32.824494 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:32:32.824630 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:32:32.824790 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:32:32.824924 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:32:32.825090 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:32:32.825245 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:32:32.825383 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:32:32.825532 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:32:32.825681 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:32:32.825856 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:32:32.826019 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:32:32.826156 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:32:32.826308 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:32:32.826461 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:32:32.826598 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:32:32.826774 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:32:32.826923 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:32:32.827057 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:32:32.827231 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:32:32.827364 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:32:32.827531 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:32:32.827665 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:32:32.827798 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:32:32.827949 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:32:32.828117 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:32:32.828250 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:32:32.828403 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:32:32.828536 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:32:32.828698 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:32:32.828851 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:32:32.829019 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:32:32.829151 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:32:32.829302 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:32:32.829509 #8687]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:32:32.829647 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:32:32.829780 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:32:32.829956 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:32:32.830093 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:32:32.830230 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:32:32.830380 #8687]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:32:32.830531 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:32:32.830683 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:32:32.830820 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:32:32.831002 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:32:32.831165 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:32:32.831293 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:32:32.831453 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:32:32.831586 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:32:32.831736 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:32:32.831889 #8687]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:32:32.832026 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:32:32.832166 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:32:32.832316 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:32:32.832448 #8687]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:32:32.832594 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:32:32.832726 #8687]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:32:32.832880 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:32:32.833009 #8687]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:32:32.833167 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:32:32.833316 #8687]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:32:32.833479 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:32:32.833631 #8687]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:32:32.833768 #8687]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:32:32.833918 #8687]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:35:25.730641 #8689]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:35:25.731455 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:35:25.731762 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:35:25.732025 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:35:25.732262 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:35:25.732552 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:35:25.732818 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:35:25.732972 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:35:25.733097 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:35:25.733251 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:35:25.733375 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:35:25.733518 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:35:25.733640 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:35:25.733804 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:35:25.733935 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:35:25.734082 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:35:25.734220 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:35:25.734368 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:35:25.734487 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:35:25.734628 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:35:25.734748 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:35:25.734899 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:35:25.735045 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:35:25.735190 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:35:25.735348 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:35:25.735473 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:35:25.735621 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:35:25.735792 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:35:25.735922 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:35:25.736079 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:35:25.736225 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:35:25.736358 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:35:25.736505 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:35:25.736637 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:35:25.736784 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:35:25.736938 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:35:25.737056 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:35:25.737215 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:35:25.737367 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:35:25.737535 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:35:25.737654 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:35:25.737776 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:35:25.737894 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:35:25.738076 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:35:25.738194 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:35:25.738364 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:35:25.738493 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:35:25.738633 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:35:25.738769 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:35:25.738896 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:35:25.739014 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:35:25.739155 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:35:25.739272 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:35:25.739428 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:35:25.739570 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:35:25.739711 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:35:25.739854 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:35:25.739977 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:35:25.740114 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:35:25.740237 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:35:25.740366 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:35:25.740511 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:35:25.740637 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:35:25.740786 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:35:25.740904 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:35:25.741033 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:35:25.741160 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:35:25.741308 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:35:25.741428 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:35:25.741595 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:35:25.741747 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:35:25.741894 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:35:25.742012 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:35:43.481808 #8689]  INFO -- : Executing: delete from game_neighbors where game_id = ? and neighbor_id = ?; with: [16, 17]
+I, [2014-05-09T15:35:43.485791 #8689]  INFO -- : Executing: delete from game_neighbors where game_id = ? and neighbor_id = ?; with: [17, 16]
+I, [2014-05-09T15:35:45.545879 #8689]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:35:45.546709 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:35:45.547061 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:35:45.547391 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:35:45.547622 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:35:45.547884 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:35:45.548142 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:35:45.548398 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:35:45.548648 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:35:45.548874 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:35:45.549104 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:35:45.549359 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:35:45.549576 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:35:45.549838 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:35:45.549984 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:35:45.550126 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:35:45.550266 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:35:45.550412 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:35:45.550534 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:35:45.550674 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:35:45.550815 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:35:45.550961 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:35:45.551093 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:35:45.551259 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:35:45.551381 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:35:45.551524 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:35:45.551646 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:35:45.551766 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:35:45.551903 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:35:45.552052 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:35:45.552183 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:35:45.552346 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:35:45.552463 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:35:45.552587 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:35:45.552708 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:35:45.552883 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:35:45.553005 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:35:45.554480 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:35:45.554663 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:35:45.554848 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:35:45.554984 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:35:45.555138 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:35:45.555267 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:35:45.555418 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:35:45.555542 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:35:45.555711 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:35:45.555852 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:35:45.556016 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:35:45.556140 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:35:45.556264 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:35:45.556407 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:35:45.556535 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:35:45.556656 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:35:45.556817 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:35:45.556971 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:35:45.557121 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:35:45.557249 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:35:45.557390 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:35:45.557518 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:35:45.557650 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:35:45.557785 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:35:45.557930 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:35:45.558086 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:35:45.558231 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:35:45.558352 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:36:03.827078 #8689]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T15:36:06.011384 #8689]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T15:36:06.875066 #8689]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [16, 17]
+I, [2014-05-09T15:36:06.974912 #8689]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [17, 16]
+I, [2014-05-09T15:36:19.262945 #8689]  INFO -- : Executing: select * from game_neighbors; with: []
+I, [2014-05-09T15:36:19.263797 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:36:19.264120 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:36:19.264364 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:36:19.264588 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:36:19.264887 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 10
+I, [2014-05-09T15:36:19.265107 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord Advanced Edition Companion
+I, [2014-05-09T15:36:19.265330 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:36:19.265572 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:36:19.265838 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:36:19.266050 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:36:19.266279 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:36:19.266446 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:36:19.266595 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 15
+I, [2014-05-09T15:36:19.266726 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mutant Future
+I, [2014-05-09T15:36:19.266894 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 9
+I, [2014-05-09T15:36:19.267014 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Labyrinth Lord
+I, [2014-05-09T15:36:19.267138 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:36:19.267280 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:36:19.267405 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:36:19.267552 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:36:19.267701 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:36:19.267849 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:36:19.268017 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:36:19.268136 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:36:19.268260 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:36:19.268403 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:36:19.268526 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:36:19.268672 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:36:19.268820 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:36:19.268949 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:36:19.269110 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 5
+I, [2014-05-09T15:36:19.269228 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Moldvay Basic
+I, [2014-05-09T15:36:19.269357 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:36:19.269499 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:36:19.269622 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:36:19.269739 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:36:19.269885 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 4
+I, [2014-05-09T15:36:19.270031 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Holmes Basic
+I, [2014-05-09T15:36:19.270171 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:36:19.270289 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:36:19.270435 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:36:19.270553 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:36:19.270694 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:36:19.270852 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:36:19.271000 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 7
+I, [2014-05-09T15:36:19.271128 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Rules Cyclopedia
+I, [2014-05-09T15:36:19.271306 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 6
+I, [2014-05-09T15:36:19.271425 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Mentzer Basic
+I, [2014-05-09T15:36:19.271547 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:36:19.271695 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:36:19.271817 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:36:19.271933 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:36:19.272130 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 14
+I, [2014-05-09T15:36:19.272259 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Gamma World
+I, [2014-05-09T15:36:19.272392 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 1
+I, [2014-05-09T15:36:19.272544 #8689]  INFO -- : Executing: Select * from games where name = ?; with: OD&D
+I, [2014-05-09T15:36:19.272676 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:36:19.272837 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:36:19.272972 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:36:19.273105 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:36:19.273275 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 8
+I, [2014-05-09T15:36:19.273403 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 2e
+I, [2014-05-09T15:36:19.273568 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 2
+I, [2014-05-09T15:36:19.273686 #8689]  INFO -- : Executing: Select * from games where name = ?; with: AD&D 1e
+I, [2014-05-09T15:36:19.273840 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:36:19.273958 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:36:19.274078 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:36:19.274218 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:36:19.274364 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 17
+I, [2014-05-09T15:36:19.274492 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Microlite74
+I, [2014-05-09T15:36:19.274644 #8689]  INFO -- : Executing: Select * from games where id = ?; with: 16
+I, [2014-05-09T15:36:19.274813 #8689]  INFO -- : Executing: Select * from games where name = ?; with: Microlite81
+I, [2014-05-09T15:36:21.646830 #8689]  INFO -- : Executing: delete from game_neighbors where game_id = ? and neighbor_id = ?; with: [16, 17]
+I, [2014-05-09T15:36:21.747127 #8689]  INFO -- : Executing: delete from game_neighbors where game_id = ? and neighbor_id = ?; with: [17, 16]
+I, [2014-05-09T15:36:37.117445 #8689]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T15:36:38.798107 #8689]  INFO -- : Executing: select * from games; with: []
+I, [2014-05-09T15:36:39.557904 #8689]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [16, 17]
+I, [2014-05-09T15:36:39.657271 #8689]  INFO -- : Executing: Insert into game_neighbors (game_id, neighbor_id) values (?, ?); with: [17, 16]

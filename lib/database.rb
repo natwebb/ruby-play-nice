@@ -11,7 +11,8 @@ class Database < SQLite3::Database
   end
 
   def create_tables
-    self.execute("CREATE TABLE games (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, alt_names text, base_id int, neighbor_id int, author text, year int, AC varchar(4), race_as_class int, saves int, skills int, currency text, init text, xp_for_gp int)")
+    self.execute("CREATE TABLE games (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, alt_names text, base_id int, neighbor_id int, author text, year int, AC text, race_as_class int, saves int, skills int, currency text, init text, xp_for_gp int)")
+    self.execute("CREATE TABLE game_neighbors (game_id, neighbor_id)")
   end
 
   def execute(statement, bind_vars = [])

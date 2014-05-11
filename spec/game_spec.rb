@@ -72,6 +72,27 @@ describe Game do
     end
   end
 
+  context ".all" do
+    context "with nothing in the database" do
+      it "should return an empty array" do
+        Game.all.length.should == 0
+      end
+    end
+
+    context "with multiple games in the database" do
+      before do
+        Game.new("Labyrinth Lord").save
+        Game.new("OSRIC").save
+        Game.new("ACKS").save
+        Game.new("Mutant Future").save
+      end
+
+      it "should return the number of games in the database" do
+        Game.all.length.should == 4
+      end
+    end
+  end
+
   context "#save" do
     let(:game_list){Environment.database_connection.execute("Select name from games")}
 
@@ -115,4 +136,136 @@ describe Game do
       end
     end
   end
+
+  context ".delete_by_name" do
+    before do
+      Game.new("Labyrinth Lord").save
+      Game.new("OSRIC").save
+      Game.new("ACKS").save
+      Game.new("Mutant Future").save
+    end
+
+    context "with a valid name" do
+      before do
+        Game.delete_by_name("OSRIC")
+      end
+
+      it "should delete the game from the database" do
+        Game.count.should == 3
+      end
+
+      it "should not be able to find the game" do
+        Game.find_by_name("OSRIC").should be_nil
+      end
+    end
+
+    context "with an invalid name" do
+      it "should not delete anything" do
+        Game.delete_by_name("AD&D")
+        Game.count.should == 4
+      end
+    end
+  end
+
+  context "#get_game_data" do
+    let(:game){ Game.new("OSRIC") }
+
+    context "with no game data" do
+      it "should return a mostly-empty hash" do
+        game.save
+        game.get_game_data["name"].should == "OSRIC"
+        game.get_game_data["year"].should be_nil
+      end
+    end
+
+    context "with game data" do
+      it "should return a game's information" do
+        game.save
+        game.update_game_info("1", "Old-School Reference Index and Compilation", "Stewart Marshall", "2008")
+        game.get_game_data["author"].should == "Stewart Marshall"
+      end
+    end
+  end
+
+  context "#update_game_info" do
+    let(:game){ Game.new("OSRIC") }
+
+    it "should update a game's information" do
+      game.save
+      game.update_game_info("1", "Old-School Reference Index and Compilation", "Stuart Marshall", "1974")
+      game.update_game_info("1", "Old-School Reference Index and Compilation", "Stewart Marshall", "2008")
+      game.get_game_data["author"].should == "Stewart Marshall"
+      game.get_game_data["year"].should == 2008
+    end
+  end
+
+  context "#update_game_rules" do
+    let(:game){ Game.new("OSRIC") }
+
+    it "should update a game's information" do
+      game.save
+      game.update_game_rules("ascending", 0, 3, 1, "gold", "individual", 0)
+      game.update_game_rules("descending", 1, 5, 0, "gold", "group", 1)
+      game.get_game_data["AC"].should == "descending"
+      game.get_game_data["xp_for_gp"].should == 1
+    end
+  end
+
+  context ".get_base_games" do
+    before do
+      populate_base
+    end
+
+    it "should return an array of base games" do
+      Game.get_base_games.length.should == 4
+    end
+
+    it "should only include games with id = base_id" do
+      games = Game.get_base_games
+
+      games.each do |game|
+        game["base_id"].should == game["id"]
+      end
+    end
+  end
+
+  context ".get_related_games" do
+    before do
+      populate_base
+      run_pn_with_input("4", "OSRIC", "2", "3", "Old-School Reference and Index Compilation", "Stewart Marshall", "2008", "2", "2", "5", "2", "1", "2", "1")
+    end
+
+    let(:base_id){ Game.find_by_name("AD&D 1e").get_game_data["id"] }
+
+    it "should return an array of games matching a certain base id" do
+      Game.get_related_games(base_id).length.should == 2
+    end
+
+    it "should only include games with base_id correct" do
+      games = Game.get_related_games(base_id)
+
+      games.each do |game|
+        game["base_id"].should == base_id
+      end
+    end
+  end
+
+  context ".get_by_rule" do
+    before do
+      populate_base
+    end
+
+    it "should return an array of games with a certain rule" do
+      Game.get_by_rule("skills", 0).length.should == 3
+    end
+
+    it "should only include games with that rule setting" do
+      games = Game.get_by_rule("skills", 0)
+
+      games.each do |game|
+        game["skills"].should == 0
+      end
+    end
+  end
+
 end
