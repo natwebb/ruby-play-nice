@@ -4,8 +4,6 @@ $LOAD_PATH << "lib"
 $LOAD_PATH << "models"
 
 require 'environment'
-require 'game'
-require 'game_neighbor'
 
 Environment.environment = "test"
 
@@ -36,8 +34,8 @@ end
 
 RSpec.configure do |config|
   config.after(:each) do
-    Environment.database_connection.execute("DELETE FROM games;")
-    Environment.database_connection.execute("DELETE FROM game_neighbors;")
+    Game.destroy_all
+    GameNeighbor.destroy_all
   end
 end
 

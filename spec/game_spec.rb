@@ -2,7 +2,7 @@ require_relative 'spec_helper'
 
 describe Game do
   context "#new" do
-    let(:game) {Game.new("Labyrinth Lord")}
+    let(:game) {Game.new(name: "Labyrinth Lord")}
 
     it "should create a new Game with name stored" do
       game.name.should == "Labyrinth Lord"
@@ -18,10 +18,10 @@ describe Game do
 
     context "with multiple games in the database" do
       before do
-        Game.new("Labyrinth Lord").save
-        Game.new("OSRIC").save
-        Game.new("ACKS").save
-        Game.new("Mutant Future").save
+        Game.new(name: "Labyrinth Lord").save
+        Game.new(name: "OSRIC").save
+        Game.new(name: "ACKS").save
+        Game.new(name: "Mutant Future").save
       end
 
       it "should return the correct count" do
@@ -39,10 +39,10 @@ describe Game do
 
     context "with a game by that name in the database" do
       before do
-        Game.new("Labyrinth Lord").save
-        Game.new("OSRIC").save
-        Game.new("ACKS").save
-        Game.new("Mutant Future").save
+        Game.new(name: "Labyrinth Lord").save
+        Game.new(name: "OSRIC").save
+        Game.new(name: "ACKS").save
+        Game.new(name: "Mutant Future").save
       end
 
       it "should return that game" do
@@ -60,10 +60,10 @@ describe Game do
 
     context "with multiple games in the database" do
       before do
-        Game.new("Labyrinth Lord").save
-        Game.new("OSRIC").save
-        Game.new("ACKS").save
-        Game.new("Mutant Future").save
+        Game.new(name: "Labyrinth Lord").save
+        Game.new(name: "OSRIC").save
+        Game.new(name: "ACKS").save
+        Game.new(name: "Mutant Future").save
       end
 
       it "should return the last one inserted" do
@@ -81,10 +81,10 @@ describe Game do
 
     context "with multiple games in the database" do
       before do
-        Game.new("Labyrinth Lord").save
-        Game.new("OSRIC").save
-        Game.new("ACKS").save
-        Game.new("Mutant Future").save
+        Game.new(name: "Labyrinth Lord").save
+        Game.new(name: "OSRIC").save
+        Game.new(name: "ACKS").save
+        Game.new(name: "Mutant Future").save
       end
 
       it "should return the number of games in the database" do
@@ -94,10 +94,10 @@ describe Game do
   end
 
   context "#save" do
-    let(:game_list){Environment.database_connection.execute("Select name from games")}
+    let(:game_list){Game.connection.execute("Select name from games")}
 
     context "with a unique name" do
-      let(:game){Game.new("Labyrinth Lord")}
+      let(:game){Game.new(name: "Labyrinth Lord")}
 
       it "should return true" do
         game.save.should be_true
@@ -116,10 +116,10 @@ describe Game do
 
     context "with a duplicate name" do
       before do
-        Game.new("Labyrinth Lord").save
+        Game.new(name: "Labyrinth Lord").save
       end
 
-      let(:game){Game.new("Labyrinth Lord")}
+      let(:game){Game.new(name: "Labyrinth Lord")}
 
       it "should return false" do
         game.save.should be_false
@@ -132,17 +132,17 @@ describe Game do
 
       it "should save error messages" do
         game.save
-        game.errors.first.should == "Labyrinth Lord already exists."
+        game.errors[:name].first.should == "already exists."
       end
     end
   end
 
   context ".delete_by_name" do
     before do
-      Game.new("Labyrinth Lord").save
-      Game.new("OSRIC").save
-      Game.new("ACKS").save
-      Game.new("Mutant Future").save
+      Game.new(name: "Labyrinth Lord").save
+      Game.new(name: "OSRIC").save
+      Game.new(name: "ACKS").save
+      Game.new(name: "Mutant Future").save
     end
 
     context "with a valid name" do
@@ -168,7 +168,7 @@ describe Game do
   end
 
   context "#get_game_data" do
-    let(:game){ Game.new("OSRIC") }
+    let(:game){ Game.new(name: "OSRIC") }
 
     context "with no game data" do
       it "should return a mostly-empty hash" do
@@ -188,7 +188,7 @@ describe Game do
   end
 
   context "#update_game_info" do
-    let(:game){ Game.new("OSRIC") }
+    let(:game){ Game.new(name: "OSRIC") }
 
     it "should update a game's information" do
       game.save
@@ -200,14 +200,14 @@ describe Game do
   end
 
   context "#update_game_rules" do
-    let(:game){ Game.new("OSRIC") }
+    let(:game){ Game.new(name: "OSRIC") }
 
     it "should update a game's information" do
       game.save
       game.update_game_rules("ascending", 0, 3, 1, "gold", "individual", 0)
       game.update_game_rules("descending", 1, 5, 0, "gold", "group", 1)
       game.get_game_data["AC"].should == "descending"
-      game.get_game_data["xp_for_gp"].should == 1
+      game.get_game_data["xp_for_gp"].should be_true
     end
   end
 
@@ -256,14 +256,14 @@ describe Game do
     end
 
     it "should return an array of games with a certain rule" do
-      Game.get_by_rule("skills", 0).length.should == 3
+      Game.get_by_rule("skills", false).length.should == 3
     end
 
     it "should only include games with that rule setting" do
-      games = Game.get_by_rule("skills", 0)
+      games = Game.get_by_rule("skills", false)
 
       games.each do |game|
-        game["skills"].should == 0
+        game["skills"].should == false
       end
     end
   end

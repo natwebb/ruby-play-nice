@@ -1,66 +1,29 @@
-class Game
-  attr_reader :errors
-  attr_reader :name
-  attr_reader :id
-
-  def initialize(name, id = false)
-    @name = name
-    @id = id ? id : 0
-    @errors = []
-  end
-
-  def self.count
-    statement = "Select count(*) from games;"
-    result = Environment.database_connection.execute(statement)
-    result[0][0]
-  end
+class Game < ActiveRecord::Base
+  validates :name, uniqueness: { message: "already exists." }
 
   def self.find_by_name(name)
-    statement = "Select * from games where name = ?;"
-    execute_and_instantiate(statement, name)
+    Game.find_by(name: name)
   end
 
   def self.find_by_id(id)
-    statement = "Select * from games where id = ?;"
-    execute_and_instantiate(statement, id)
-  end
-
-  def self.last
-    statement = "Select * from games order by id DESC limit(1);"
-    execute_and_instantiate(statement)
-  end
-
-  def save
-    if Game.find_by_name(self.name)
-      @errors << "#{self.name} already exists."
-      false
-    else
-      statement = "Insert into games (name) values (?);"
-      Environment.database_connection.execute(statement, self.name)
-      statement = "Select id from games where name = ?;"
-      @id = Environment.database_connection.execute(statement, self.name)[0][0]
-      true
-    end
+    Game.find_by(id: id)
   end
 
   def self.delete_by_name(name)
-    statement = "delete from games where name = ?;"
-    Environment.database_connection.execute(statement, name)
+    game = Game.find_by(name: name)
+    game.destroy if game
   end
 
   def get_game_data
-    statement = "Select * from games where name = ?;"
-    Environment.database_connection.execute(statement, self.name)[0]
+    Game.find_by(name: name)
   end
 
   def self.get_base_games
-    statement = "Select * from games where id = base_id;"
-    Environment.database_connection.execute(statement)
+    Game.where("id = base_id")
   end
 
   def self.get_related_games(base_id)
-    statement = "select * from games where base_id = ?;"
-    Environment.database_connection.execute(statement, base_id)
+    Game.where(base_id: base_id)
   end
 
   def self.get_neighbor_games(id)
@@ -69,33 +32,17 @@ class Game
   end
 
   def self.get_by_rule(rule, setting)
-    statement = "select * from games where #{rule} = ?;"
-    Environment.database_connection.execute(statement, setting)
+    Game.where("#{rule} = ?", setting)
   end
 
   def update_game_info(base, alternate_names, authors, year)
-    statement = "Update games set base_id = ?, alt_names = ?, author = ?, year = ? where name = ?;"
-    Environment.database_connection.execute(statement, [base, alternate_names, authors, year.to_i, self.name])
+    game = Game.find_by(name: name)
+    game.update(base_id: base, alt_names: alternate_names, author: authors, year: year.to_i)
   end
 
   def update_game_rules(ac, race, saves, skills, currency, init, xpgp)
-    statement = "Update games set AC = ?, race_as_class = ?, saves = ?, skills = ?, currency = ?, init = ?, xp_for_gp = ? where name = ?;"
-    Environment.database_connection.execute(statement, [ac, race, saves, skills, currency, init, xpgp, self.name])
+    game = Game.find_by(name: name)
+    game.update(AC: ac, race_as_class: race, saves: saves, skills: skills, currency: currency, init: init, xp_for_gp: xpgp)
   end
 
-  def self.all
-    statement = "select * from games;"
-    Environment.database_connection.execute(statement)
-  end
-
-  private
-
-  def self.execute_and_instantiate(statement, bind_vars = [])
-    result = Environment.database_connection.execute(statement, bind_vars)
-    unless result.empty?
-      name = result[0]["name"]
-      id = result[0]["id"]
-      Game.new(name, id)
-    end
-  end
 end

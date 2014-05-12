@@ -170,14 +170,14 @@ def new_game
   name = gets
   return unless name
   name.chomp!
-  game = Game.new(name)
+  game = Game.new(name: name)
   if game.save
     puts "#{name} has been added."
     get_game_info(game)
     get_game_rules(game)
     puts
   else
-    puts game.errors
+    puts "#{name} #{game.errors[:name][0]}"
     new_game
   end
 end

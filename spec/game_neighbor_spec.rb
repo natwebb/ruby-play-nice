@@ -10,7 +10,7 @@ describe GameNeighbor do
     let(:neighbor) do
       id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
       id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
-      GameNeighbor.new(id_a, id_b)
+      GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
     end
 
     it "should create a new GameNeighbor with ids stored" do
@@ -35,7 +35,7 @@ describe GameNeighbor do
       let(:neighbor) do
         id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
         id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
-        GameNeighbor.new(id_a, id_b)
+        GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
       it "should return the correct count" do
@@ -61,13 +61,13 @@ describe GameNeighbor do
       let(:neighbor) do
         id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
         id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
-        GameNeighbor.new(id_a, id_b)
+        GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
       let(:neighbor_b) do
         id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
         id_b = Game.find_by_name("OSRIC").get_game_data["id"]
-        GameNeighbor.new(id_a, id_b)
+        GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
       it "should return an array with all neighbors of that game" do
@@ -97,13 +97,13 @@ describe GameNeighbor do
       let(:neighbor) do
         id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
         id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
-        GameNeighbor.new(id_a, id_b)
+        GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
       let(:neighbor_b) do
         id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
         id_b = Game.find_by_name("OSRIC").get_game_data["id"]
-        GameNeighbor.new(id_a, id_b)
+        GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
       it "should return the number of links in the database" do

@@ -2,7 +2,7 @@ require_relative "spec_helper"
 
 describe "Adding a game" do
   before do
-    game = Game.new("Labyrinth Lord")
+    game = Game.new(name: "Labyrinth Lord")
     game.save
   end
 
@@ -48,7 +48,7 @@ end
 
 describe "Updating a game" do
   before do
-    game = Game.new("OSRIC")
+    game = Game.new(name: "OSRIC")
     game.save
     populate_base
   end
