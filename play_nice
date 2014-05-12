@@ -190,7 +190,6 @@ def new_game
     get_game_info(game)
     get_game_rules(game)
     puts
-    run_top_menu
   else
     puts game.errors
     new_game

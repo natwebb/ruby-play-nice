@@ -232,10 +232,10 @@ describe Game do
   context ".get_related_games" do
     before do
       populate_base
-      run_pn_with_input("4", "OSRIC", "2", "3", "Old-School Reference and Index Compilation", "Stewart Marshall", "2008", "2", "2", "5", "2", "1", "2", "1")
+      run_pn_with_input("4", "OSRIC", "2", "3", "Old-School Reference and Index Compilation", "Stewart Marshall", "2008", "2", "2", "5", "2", "1", "2", "1", "q")
     end
 
-    let(:base_id){ Game.find_by_name("AD&D 1e").get_game_data["id"] }
+    let(:base_id){ Game.find_by_name("AD&D 1e").id }
 
     it "should return an array of games matching a certain base id" do
       Game.get_related_games(base_id).length.should == 2
