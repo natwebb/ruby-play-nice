@@ -206,8 +206,8 @@ def link_games
   first_id = choose_from_all_games["id"]
   puts "Choose the second game to link as neighbors."
   second_id = choose_from_all_games["id"]
-  GameNeighbor.new(first_id, second_id).save
-  GameNeighbor.new(second_id, first_id).save
+  GameNeighbor.new({game_id: first_id, neighbor_id: second_id}).save
+  GameNeighbor.new({game_id: second_id, neighbor_id: first_id}).save
 
   run_top_menu
 end
@@ -217,9 +217,9 @@ def unlink_games
 
   pairs = GameNeighbor.all
   pairs.each_with_index do |pair, i|
-    game_a = Game.find_by_id(pair["game_id"]).get_game_data
-    game_b = Game.find_by_id(pair["neighbor_id"]).get_game_data
-    puts "#{(i/2)+1}. #{game_a["name"]} & #{game_b["name"]}" if i%2 == 0
+    game_a = Game.find_by_id(pair["game_id"]).name
+    game_b = Game.find_by_id(pair["neighbor_id"]).name
+    puts "#{(i/2)+1}. #{game_a} & #{game_b}" if i%2 == 0
   end
 
   choice = get_input
@@ -373,8 +373,7 @@ EOS
 end
 
 def display_game(name, relationship, rule = "", setting = "")
-  game = Game.find_by_name(name)
-  data = game.get_game_data
+  data = Game.find_by_name(name)
 
   puts "------------------------------PLAY NICE GAME DATA SHEET------------------------------"
   puts "Name: #{data["name"]}"
@@ -457,8 +456,8 @@ def show_related_and_neighbor_games(main_name, game_id, base_id)
 end
 
 def display_relational_game(display_name, main_name)
-  main_data = Game.find_by_name(main_name).get_game_data
-  display_data = Game.find_by_name(display_name).get_game_data
+  main_data = Game.find_by_name(main_name)
+  display_data = Game.find_by_name(display_name)
 
   puts "------------------------------PLAY NICE GAME DATA SHEET------------------------------"
   puts "Your game is #{main_data["name"]}."

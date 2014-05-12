@@ -14,10 +14,6 @@ class Game < ActiveRecord::Base
     game.destroy if game
   end
 
-  def get_game_data
-    Game.find_by(name: name)
-  end
-
   def self.get_base_games
     Game.where("id = base_id")
   end
@@ -26,6 +22,7 @@ class Game < ActiveRecord::Base
     Game.where(base_id: base_id)
   end
 
+  #------this still needs to be refactored!
   def self.get_neighbor_games(id)
     statement = "select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?;"
     Environment.database_connection.execute(statement, id)
