@@ -14,27 +14,13 @@ def run_top_menu
   puts top_menu
   choice = get_input
 
-  case choice
-  when "1"
-    choose_game
-  when "2"
-    browse_games
-  when "3"
-    search_rules
-  when "4"
-    new_game
-  when "5"
-    edit_game
-  when "6"
-    link_games
-  when "7"
-    unlink_games
-  when "8"
-    delete_game
-  else
-    puts "'#{choice}' is not a valid option. Please try again."
-    run_top_menu
-  end
+  options = {"1"=>"choose_game", "2"=>"browse_games", "3"=>"search_rules", "4"=>"new_game", "5"=>"edit_game", "6"=>"link_games", "7"=>"unlink_games", "8"=>"delete_game"}
+  eval(options.fetch(choice, "invalid_option('#{choice}')"))
+end
+
+def invalid_option(choice)
+  puts "'#{choice}' is not a valid option. Please try again."
+  run_top_menu
 end
 
 def choose_game
