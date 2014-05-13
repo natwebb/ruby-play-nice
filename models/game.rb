@@ -1,4 +1,7 @@
 class Game < ActiveRecord::Base
+  has_many :game_neighbors, dependent: :destroy
+  has_many :neighbors, through: :game_neighbors
+
   validates :name, uniqueness: { message: "already exists." }
 
   def self.find_by_name(name)
@@ -22,10 +25,15 @@ class Game < ActiveRecord::Base
     Game.where(base_id: base_id)
   end
 
-  #------this still needs to be refactored!
-  def self.get_neighbor_games(id)
-    statement = "select * from games inner join game_neighbors on games.id = game_neighbors.neighbor_id where game_neighbors.game_id = ?;"
-    Environment.database_connection.execute(statement, id)
+  def self.get_neighbor_games(game_id)
+    game = find_by_id(game_id)
+    neighbors = game.game_neighbors
+    output = []
+    neighbors.each do |neighbor|
+      game = find_by_id(neighbor.neighbor_id)
+      output << game if game
+    end
+    output
   end
 
   def self.get_by_rule(rule, setting)

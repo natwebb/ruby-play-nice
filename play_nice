@@ -175,7 +175,7 @@ def new_game
     puts "#{name} has been added."
     get_game_info(game)
     get_game_rules(game)
-    puts
+    run_top_menu
   else
     puts "#{name} #{game.errors[:name][0]}"
     new_game
@@ -203,11 +203,11 @@ end
 
 def link_games
   puts "Choose the first game to link as neighbors."
-  first_id = choose_from_all_games["id"]
+  first_game = choose_from_all_games
   puts "Choose the second game to link as neighbors."
-  second_id = choose_from_all_games["id"]
-  GameNeighbor.new({game_id: first_id, neighbor_id: second_id}).save
-  GameNeighbor.new({game_id: second_id, neighbor_id: first_id}).save
+  second_game = choose_from_all_games
+  first_game.game_neighbors.create(neighbor: second_game)
+  second_game.game_neighbors.create(neighbor: first_game)
 
   run_top_menu
 end
@@ -382,12 +382,12 @@ def display_game(name, relationship, rule = "", setting = "")
   puts "Release Year: #{data["year"]}"
   puts
   puts "#{data["name"]} uses #{data["AC"]} armor class."
-  puts "Race as class: #{data["race_as_class"] == 1}"
+  puts "Race as class: #{data["race_as_class"]}"
   puts "Number of saving throws: #{data["saves"]}"
   puts "Skills: #{data["skills"] == 1}"
   puts "#{data["name"]} uses a #{data["currency"]} standard for currency."
   puts "#{data["name"]} uses #{data["init"]} initiative."
-  puts "XP for GP: #{data["xp_for_gp"] == 1}"
+  puts "XP for GP: #{data["xp_for_gp"]}"
 
   puts
 
@@ -438,10 +438,12 @@ def show_related_and_neighbor_games(main_name, game_id, base_id)
 
   bump = related_games.length
 
-  puts
-  puts "Neighboring games to this game."
-  neighbor_games.each_with_index do |game, i|
-    puts "#{i+bump+1}. #{game["name"]}\n"
+  if neighbor_games.length > 0
+    puts
+    puts "Neighboring games to this game."
+    neighbor_games.each_with_index do |game, i|
+      puts "#{i+bump+1}. #{game.name}\n"
+    end
   end
 
   choice = get_input
@@ -474,11 +476,11 @@ def display_relational_game(display_name, main_name)
     puts "CONVERSION NEEDED: #{display_data["name"]} uses #{display_data["AC"]} armor class."
   end
 
-  if main_data["race_as_class"] == display_data["race_as_class"] && main_data["race_as_class"] == 1
+  if main_data["race_as_class"] == display_data["race_as_class"] && main_data["race_as_class"] == true
     puts "Both games use race as class."
-  elsif main_data["race_as_class"] == display_data["race_as_class"] && main_data["race_as_class"] == 0
+  elsif main_data["race_as_class"] == display_data["race_as_class"] && main_data["race_as_class"] == false
     puts "Neither game uses race as class."
-  elsif main_data["race_as_class"] > display_data["race_as_class"]
+  elsif main_data["race_as_class"] == false && display_data["race_as_class"] == true
     puts "CONVERSION NEEDED: #{display_data["name"]} separates race and class."
   else
     puts "CONVERSION NEEDED: #{display_data["name"]} uses race as class."
@@ -490,11 +492,11 @@ def display_relational_game(display_name, main_name)
     puts "CONVERSION NEEDED: #{display_data["name"]} uses #{display_data["saves"]} saving throws."
   end
 
-  if main_data["skills"] == display_data["skills"] && main_data["skills"] == 1
+  if main_data["skills"] == display_data["skills"] && main_data["skills"] == true
     puts "Both games use skill systems, though they might be different."
-  elsif main_data["skills"] == display_data["skills"] && main_data["skills"] == 0
+  elsif main_data["skills"] == display_data["skills"] && main_data["skills"] == false
     puts "Neither game uses a skill system."
-  elsif main_data["skills"] > display_data["skills"]
+  elsif main_data["skills"] == true && display_data["skills"] == false
     puts "CONVERSION NEEDED: #{display_data["name"]} does not use a skill system."
   else
     puts "CONVERSION NEEDED: #{display_data["name"]} uses a skill system."
