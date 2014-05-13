@@ -56,12 +56,12 @@ describe "Updating a game" do
   context "when the game exists" do
     let!(:output_a){ run_pn_with_input("5", "1", "1", "2", "3", "Old-School Reference Index and Compilation", "Stewart Marshall", "2008", "q") }
     it "should change the game info" do
-      Game.find_by_name("OSRIC").get_game_data["alt_names"].should include("Old-School Reference Index and Compilation")
+      Game.find_by_name("OSRIC")["alt_names"].should include("Old-School Reference Index and Compilation")
     end
 
     let!(:output_b){ run_pn_with_input("5", "1", "2", "2", "2", "5", "2", "1", "2", "1", "q") }
     it "should change the game rules" do
-      Game.find_by_name("OSRIC").get_game_data["AC"].should include("descending")
+      Game.find_by_name("OSRIC")["AC"].should include("descending")
     end
 
     it "should still have only one game in the db" do

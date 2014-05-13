@@ -8,14 +8,14 @@ describe GameNeighbor do
     end
 
     let(:neighbor) do
-      id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
-      id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
+      id_a = Game.find_by_name("Labyrinth Lord")["id"]
+      id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion")["id"]
       GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
     end
 
     it "should create a new GameNeighbor with ids stored" do
-      neighbor.game_id.should == Game.find_by_name("Labyrinth Lord").get_game_data["id"]
-      neighbor.neighbor_id.should == Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
+      neighbor.game_id.should == Game.find_by_name("Labyrinth Lord")["id"]
+      neighbor.neighbor_id.should == Game.find_by_name("Labyrinth Lord Advanced Edition Companion")["id"]
     end
   end
 
@@ -33,8 +33,8 @@ describe GameNeighbor do
       end
 
       let(:neighbor) do
-        id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
-        id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
+        id_a = Game.find_by_name("Labyrinth Lord")["id"]
+        id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion")["id"]
         GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
@@ -59,21 +59,21 @@ describe GameNeighbor do
       end
 
       let(:neighbor) do
-        id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
-        id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
+        id_a = Game.find_by_name("Labyrinth Lord")["id"]
+        id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion")["id"]
         GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
       let(:neighbor_b) do
-        id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
-        id_b = Game.find_by_name("OSRIC").get_game_data["id"]
+        id_a = Game.find_by_name("Labyrinth Lord")["id"]
+        id_b = Game.find_by_name("OSRIC")["id"]
         GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
       it "should return an array with all neighbors of that game" do
         neighbor.save
         neighbor_b.save
-        game_id = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
+        game_id = Game.find_by_name("Labyrinth Lord")["id"]
         GameNeighbor.find_by_game_id(game_id)[0]["game_id"].should == game_id
         GameNeighbor.find_by_game_id(game_id)[1]["game_id"].should == game_id
         GameNeighbor.find_by_game_id(game_id).length.should == 2
@@ -95,14 +95,14 @@ describe GameNeighbor do
       end
 
       let(:neighbor) do
-        id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
-        id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion").get_game_data["id"]
+        id_a = Game.find_by_name("Labyrinth Lord")["id"]
+        id_b = Game.find_by_name("Labyrinth Lord Advanced Edition Companion")["id"]
         GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 
       let(:neighbor_b) do
-        id_a = Game.find_by_name("Labyrinth Lord").get_game_data["id"]
-        id_b = Game.find_by_name("OSRIC").get_game_data["id"]
+        id_a = Game.find_by_name("Labyrinth Lord")["id"]
+        id_b = Game.find_by_name("OSRIC")["id"]
         GameNeighbor.new({game_id: id_a, neighbor_id: id_b})
       end
 

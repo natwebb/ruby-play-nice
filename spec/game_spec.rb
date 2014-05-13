@@ -167,26 +167,6 @@ describe Game do
     end
   end
 
-  context "#get_game_data" do
-    let(:game){ Game.new(name: "OSRIC") }
-
-    context "with no game data" do
-      it "should return a mostly-empty hash" do
-        game.save
-        game.get_game_data["name"].should == "OSRIC"
-        game.get_game_data["year"].should be_nil
-      end
-    end
-
-    context "with game data" do
-      it "should return a game's information" do
-        game.save
-        game.update_game_info("1", "Old-School Reference Index and Compilation", "Stewart Marshall", "2008")
-        game.get_game_data["author"].should == "Stewart Marshall"
-      end
-    end
-  end
-
   context "#update_game_info" do
     let(:game){ Game.new(name: "OSRIC") }
 
@@ -194,8 +174,9 @@ describe Game do
       game.save
       game.update_game_info("1", "Old-School Reference Index and Compilation", "Stuart Marshall", "1974")
       game.update_game_info("1", "Old-School Reference Index and Compilation", "Stewart Marshall", "2008")
-      game.get_game_data["author"].should == "Stewart Marshall"
-      game.get_game_data["year"].should == 2008
+      game = Game.find_by_name("OSRIC")
+      game["author"].should == "Stewart Marshall"
+      game["year"].should == 2008
     end
   end
 
@@ -206,8 +187,9 @@ describe Game do
       game.save
       game.update_game_rules("ascending", 0, 3, 1, "gold", "individual", 0)
       game.update_game_rules("descending", 1, 5, 0, "gold", "group", 1)
-      game.get_game_data["AC"].should == "descending"
-      game.get_game_data["xp_for_gp"].should be_true
+      game = Game.find_by_name("OSRIC")
+      game["AC"].should == "descending"
+      game["xp_for_gp"].should be_true
     end
   end
 
